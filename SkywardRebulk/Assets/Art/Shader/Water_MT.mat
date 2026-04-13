@@ -74,9 +74,11 @@ Material:
     - _EnableBlendModePreserveSpecularLighting: 1
     - _EnableFogOnTransparent: 1
     - _ExcludeFromTUAndAA: 0
+    - _IntersectionPower: 11.69
     - _MaterialID: 1
     - _MaterialTypeMask: 2
     - _NormalStrength: 0.4
+    - _OcclusionStrength: 3.2
     - _Opacity: 0.57
     - _OpaqueCullMode: 2
     - _PerPixelSorting: 1
