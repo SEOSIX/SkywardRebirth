@@ -58,18 +58,18 @@ Material:
     m_Floats:
     - _AddPrecomputedVelocity: 0
     - _AlphaCutoffEnable: 0
-    - _AlphaDstBlend: 10
+    - _AlphaDstBlend: 1
     - _AlphaSrcBlend: 1
-    - _BlendMode: 0
+    - _BlendMode: 1
     - _ConservativeDepthOffsetEnable: 0
     - _CullMode: 2
     - _CullModeForward: 2
     - _DepthOffsetEnable: 0
-    - _DissortStrenght: -0.22
+    - _DissortStrenght: -2.08
     - _DoubleSidedEnable: 0
     - _DoubleSidedGIMode: 0
     - _DoubleSidedNormalMode: 2
-    - _DstBlend: 10
+    - _DstBlend: 1
     - _DstBlend2: 10
     - _EnableBlendModePreserveSpecularLighting: 1
     - _EnableFogOnTransparent: 1
@@ -77,7 +77,7 @@ Material:
     - _MaterialID: 1
     - _MaterialTypeMask: 2
     - _NormalStrength: 0.4
-    - _Opacity: 1
+    - _Opacity: 0.57
     - _OpaqueCullMode: 2
     - _PerPixelSorting: 1
     - _RayTracing: 0
@@ -113,6 +113,7 @@ Material:
     - _ZTestTransparent: 4
     - _ZWrite: 0
     m_Colors:
+    - _DissortDir: {r: 0.57, g: 0.69, b: 0, a: 0}
     - _DoubleSidedConstants: {r: 1, g: 1, b: 1, a: 0}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
     - _ScrollDirection: {r: -0.05, g: -0.02, b: 0, a: 0}
