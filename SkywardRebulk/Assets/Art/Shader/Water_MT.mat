@@ -64,8 +64,9 @@ Material:
     - _ConservativeDepthOffsetEnable: 0
     - _CullMode: 2
     - _CullModeForward: 2
+    - _DepthFadeAmout: 15
     - _DepthOffsetEnable: 0
-    - _DissortStrenght: -2.08
+    - _DissortStrenght: 20.12
     - _DoubleSidedEnable: 0
     - _DoubleSidedGIMode: 0
     - _DoubleSidedNormalMode: 2
@@ -74,12 +75,17 @@ Material:
     - _EnableBlendModePreserveSpecularLighting: 1
     - _EnableFogOnTransparent: 1
     - _ExcludeFromTUAndAA: 0
-    - _IntersectionPower: 11.69
+    - _FoamAmount: 3.04
+    - _FoamCuttOff: 1.97
+    - _FoamScale: 100
+    - _FoamSpeed: 1
+    - _FresnelEffect: 62.55
+    - _IntersectionPower: 14.9
     - _MaterialID: 1
     - _MaterialTypeMask: 2
-    - _NormalStrength: 0.4
-    - _OcclusionStrength: 3.2
-    - _Opacity: 0.57
+    - _NormalStrength: 183.48
+    - _OcclusionStrength: 4.85
+    - _Opacity: 1
     - _OpaqueCullMode: 2
     - _PerPixelSorting: 1
     - _RayTracing: 0
@@ -115,10 +121,12 @@ Material:
     - _ZTestTransparent: 4
     - _ZWrite: 0
     m_Colors:
-    - _DissortDir: {r: 0.57, g: 0.69, b: 0, a: 0}
+    - _DissortDir: {r: 0.05, g: 0.05, b: 0, a: 0}
     - _DoubleSidedConstants: {r: 1, g: 1, b: 1, a: 0}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
-    - _ScrollDirection: {r: -0.05, g: -0.02, b: 0, a: 0}
+    - _FoamColor: {r: 1, g: 1, b: 1, a: 1}
+    - _FoamDir: {r: 1, g: 1, b: 0, a: 0}
+    - _ScrollDirection: {r: -0.05, g: -0.05, b: 0, a: 0}
     - _Tiling: {r: 3, g: 3, b: 0, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1

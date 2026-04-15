@@ -37,6 +37,10 @@ Material:
         m_Texture: {fileID: 2800000, guid: 088fb4ecd14f63845b05d7421d3084fe, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _NormalMap:
+        m_Texture: {fileID: 2800000, guid: 1588c83336d16cd41a54c08eb18499d0, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -61,7 +65,8 @@ Material:
     - _CullMode: 2
     - _CullModeForward: 2
     - _DepthOffsetEnable: 0
-    - _DiffractionForce: 0.19
+    - _DiffractionForce: 40.47
+    - _DisstorStrength: 2.88
     - _DoubleSidedEnable: 0
     - _DoubleSidedGIMode: 0
     - _DoubleSidedNormalMode: 2
@@ -108,9 +113,11 @@ Material:
     - _ZTestTransparent: 4
     - _ZWrite: 0
     m_Colors:
+    - _DisstortionDir: {r: 0, g: 1, b: 0, a: 0}
     - _DoubleSidedConstants: {r: 1, g: 1, b: -1, a: 0}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
     - _FrenelColor: {r: 1, g: 1, b: 1, a: 1}
+    - _Till: {r: 1, g: 1, b: 0, a: 0}
     - _WaterColor: {r: 0.8254717, g: 0.9695169, b: 1, a: 1}
     - _WaterFallDirection: {r: 0, g: 1.5, b: 0, a: 0}
   m_BuildTextureStacks: []
