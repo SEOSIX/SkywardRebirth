@@ -1,16 +1,26 @@
+using System;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class RotateHelice : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    [SerializeField] private Vector3 rotateVector;
+    [SerializeField] private float rotateSpeed;
+
+    private Transform child;
+
+    private void Awake()
     {
-        
+        child = GetComponentInChildren<Transform>();
     }
 
-    // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        
+        Rotation();
+    }
+
+    void Rotation()
+    {
+        child.Rotate(rotateVector, rotateSpeed);
     }
 }
