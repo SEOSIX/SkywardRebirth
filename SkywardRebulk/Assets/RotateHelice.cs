@@ -18,7 +18,7 @@ public class RotateHelice : MonoBehaviour
     {
         Rotation();
     }
-
+    
     void Rotation()
     {
         child.Rotate(rotateVector, rotateSpeed);

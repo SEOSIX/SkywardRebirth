@@ -274,7 +274,7 @@ MonoBehaviour:
     m_OverrideState: 0
     m_Value: 64
   m_DenoiseSS:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 1
   m_HalfResolutionDenoiserSS:
     m_OverrideState: 0
@@ -356,18 +356,18 @@ MonoBehaviour:
     m_Value: 0
   intensity:
     m_OverrideState: 1
-    m_Value: 3.18
+    m_Value: 1.01
   directLightingStrength:
     m_OverrideState: 1
-    m_Value: 0.678
+    m_Value: 0.279
   radius:
     m_OverrideState: 1
-    m_Value: 3.86
+    m_Value: 5
   spatialBilateralAggressiveness:
     m_OverrideState: 0
     m_Value: 0.15
   temporalAccumulation:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 1
   ghostingReduction:
     m_OverrideState: 0

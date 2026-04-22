@@ -7,39 +7,39 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Water_MT
-  m_Shader: {fileID: -6465566751694194690, guid: 1d66d8aa0b3f042449f835723b7cdd0d, type: 3}
+  m_Name: Trees_M
+  m_Shader: {fileID: -6465566751694194690, guid: 6d5d929bb30fafd4ca8e7d0b71b05b93, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
   - _DISABLE_SSR_TRANSPARENT
+  - _DOUBLESIDED_ON
   - _ENABLE_FOG_ON_TRANSPARENT
   - _SURFACE_TYPE_TRANSPARENT
-  - _TRANSPARENT_REFRACTIVE_SORT
   m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: 2750
+  m_DoubleSidedGI: 1
+  m_CustomRenderQueue: 3001
   stringTagMap:
     MotionVector: User
     RenderType: Transparent
   disabledShaderPasses:
-  - MOTIONVECTORS
+  - TransparentDepthPrepass
   - TransparentDepthPostpass
   - TransparentBackface
   - RayTracingPrepass
-  - TransparentDepthPrepass
+  - MOTIONVECTORS
   m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 22f80fc80a5cb09498be232237db285d, type: 3}
+    - _MainTEx:
+        m_Texture: {fileID: 2800000, guid: d587146e66006b741b6e6d1e0880b433, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _NormalMap:
-        m_Texture: {fileID: 2800000, guid: 1588c83336d16cd41a54c08eb18499d0, type: 3}
+    - _SampleTexture2D_b92b1bf63a604da490446106d0215d8d_Texture_1_Texture2D:
+        m_Texture: {fileID: 2800000, guid: d587146e66006b741b6e6d1e0880b433, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
@@ -58,41 +58,30 @@ Material:
     m_Floats:
     - _AddPrecomputedVelocity: 0
     - _AlphaCutoffEnable: 0
-    - _AlphaDstBlend: 1
+    - _AlphaDstBlend: 10
     - _AlphaSrcBlend: 1
-    - _BlendMode: 1
+    - _BlendMode: 0
     - _ConservativeDepthOffsetEnable: 0
-    - _CullMode: 2
-    - _CullModeForward: 2
-    - _DepthFadeAmout: 3.9
+    - _CullMode: 0
+    - _CullModeForward: 0
     - _DepthOffsetEnable: 0
-    - _DissortStrenght: 20.12
-    - _DoubleSidedEnable: 0
+    - _DoubleSidedEnable: 1
     - _DoubleSidedGIMode: 0
     - _DoubleSidedNormalMode: 2
-    - _DstBlend: 1
+    - _DstBlend: 10
     - _DstBlend2: 10
     - _EnableBlendModePreserveSpecularLighting: 1
     - _EnableFogOnTransparent: 1
     - _ExcludeFromTUAndAA: 0
-    - _FoamAmount: 3.9
-    - _FoamCuttOff: 4.2
-    - _FoamScale: 100
-    - _FoamSpeed: 1
-    - _FresnelEffect: 62.55
-    - _IntersectionPower: 14.9
     - _MaterialID: 1
     - _MaterialTypeMask: 2
-    - _NormalStrength: 183.48
-    - _OcclusionStrength: 4.85
-    - _Opacity: 1
     - _OpaqueCullMode: 2
-    - _PerPixelSorting: 1
+    - _PerPixelSorting: 0
     - _RayTracing: 0
     - _ReceivesSSR: 1
     - _ReceivesSSRTransparent: 0
     - _RefractionModel: 0
-    - _RenderQueueType: 3
+    - _RenderQueueType: 4
     - _RequireSplitLighting: 0
     - _SrcBlend: 1
     - _StencilRef: 0
@@ -112,27 +101,23 @@ Material:
     - _TransparentCullMode: 2
     - _TransparentDepthPostpassEnable: 0
     - _TransparentDepthPrepassEnable: 0
-    - _TransparentSortPriority: 0
+    - _TransparentSortPriority: 1
     - _TransparentWritingMotionVec: 0
     - _TransparentZWrite: 0
     - _UseShadowThreshold: 0
+    - _WindSpeed: 2.02
+    - _WindStrength: 5.62
     - _ZTestDepthEqualForOpaque: 4
     - _ZTestGBuffer: 4
     - _ZTestTransparent: 4
     - _ZWrite: 0
     m_Colors:
-    - _Depth1: {r: 0.26629555, g: 0.8117647, b: 0.14117643, a: 0.44313726}
-    - _Depth2: {r: 0, g: 0.21183375, b: 0.5169811, a: 1}
-    - _DissortDir: {r: 0.05, g: 0.05, b: 0, a: 0}
     - _DoubleSidedConstants: {r: 1, g: 1, b: 1, a: 0}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
-    - _FoamColor: {r: 1, g: 1, b: 1, a: 1}
-    - _FoamDir: {r: 1, g: 1, b: 0, a: 0}
-    - _ScrollDirection: {r: -0.05, g: -0.05, b: 0, a: 0}
-    - _Tiling: {r: 3, g: 3, b: 0, a: 0}
+    - _WindDirection: {r: 3.83, g: 3, b: 0, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
---- !u!114 &1751870840007547242
+--- !u!114 &8835568217078861953
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}

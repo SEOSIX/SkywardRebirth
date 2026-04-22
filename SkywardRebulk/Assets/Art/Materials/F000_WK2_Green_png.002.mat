@@ -28,6 +28,7 @@ Material:
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
+  - _DISABLE_SSR
   - _DISABLE_SSR_TRANSPARENT
   - _ENABLE_FOG_ON_TRANSPARENT
   - _NORMALMAP_TANGENT_SPACE
@@ -239,7 +240,7 @@ Material:
     - _DistortionVectorBias: -1
     - _DistortionVectorScale: 2
     - _DoubleSidedEnable: 0
-    - _DoubleSidedGIMode: 0
+    - _DoubleSidedGIMode: 2
     - _DoubleSidedNormalMode: 1
     - _DstBlend: 10
     - _DstBlend2: 10
@@ -288,7 +289,7 @@ Material:
     - _Parallax: 0.02
     - _PerPixelSorting: 0
     - _RayTracing: 0
-    - _ReceivesSSR: 1
+    - _ReceivesSSR: 0
     - _ReceivesSSRTransparent: 0
     - _RefractionModel: 0
     - _Smoothness: 0

@@ -136,6 +136,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cd3270ab9a5ef442a7c7bae3f1fe392, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RotateHelice
+  rotateVector: {x: 0, y: 0, z: 0}
+  rotateSpeed: 0
 --- !u!1 &37855090 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -1491054539754405831, guid: 8dace69ce480d8641ad4169da72b056d, type: 3}
@@ -153,6 +155,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cd3270ab9a5ef442a7c7bae3f1fe392, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RotateHelice
+  rotateVector: {x: 0, y: 0, z: 0}
+  rotateSpeed: 0
 --- !u!1 &116820740 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6012343713388054057, guid: 8dace69ce480d8641ad4169da72b056d, type: 3}
@@ -170,6 +174,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cd3270ab9a5ef442a7c7bae3f1fe392, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RotateHelice
+  rotateVector: {x: 0, y: 0, z: 0}
+  rotateSpeed: 0
 --- !u!1 &118154320 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -5457581752887349688, guid: 8dace69ce480d8641ad4169da72b056d, type: 3}
@@ -187,6 +193,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cd3270ab9a5ef442a7c7bae3f1fe392, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RotateHelice
+  rotateVector: {x: 0, y: 0, z: 0}
+  rotateSpeed: 0
 --- !u!1 &134788753 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7294682807335758481, guid: 8dace69ce480d8641ad4169da72b056d, type: 3}
@@ -204,6 +212,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cd3270ab9a5ef442a7c7bae3f1fe392, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RotateHelice
+  rotateVector: {x: 0, y: 0, z: 0}
+  rotateSpeed: 0
 --- !u!1 &140268533
 GameObject:
   m_ObjectHideFlags: 0
@@ -429,13 +439,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 140268533}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.11204376, y: -0.6961518, z: 0.11138085, w: 0.7002951}
-  m_LocalPosition: {x: -15.93, y: 30.2, z: -58.24}
+  m_LocalRotation: {x: 0.01335548, y: -0.9757633, z: 0.06224473, w: 0.20936371}
+  m_LocalPosition: {x: -57.9, y: 2.2, z: -3.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 18.18, y: -89.66, z: 0}
+  m_LocalEulerAnglesHint: {x: 7.3, y: -155.78, z: 0}
 --- !u!1 &156313768 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -6604338895249263119, guid: 8dace69ce480d8641ad4169da72b056d, type: 3}
@@ -453,6 +463,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cd3270ab9a5ef442a7c7bae3f1fe392, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RotateHelice
+  rotateVector: {x: 0, y: 0, z: 0}
+  rotateSpeed: 0
 --- !u!1 &157207112
 GameObject:
   m_ObjectHideFlags: 0
@@ -710,6 +722,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cd3270ab9a5ef442a7c7bae3f1fe392, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RotateHelice
+  rotateVector: {x: 0, y: 0, z: 0}
+  rotateSpeed: 0
 --- !u!1 &209424723 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6614910823206743628, guid: 8dace69ce480d8641ad4169da72b056d, type: 3}
@@ -727,6 +741,121 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cd3270ab9a5ef442a7c7bae3f1fe392, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RotateHelice
+  rotateVector: {x: 0, y: 0, z: 0}
+  rotateSpeed: 0
+--- !u!1 &215172198
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 215172202}
+  - component: {fileID: 215172201}
+  - component: {fileID: 215172200}
+  - component: {fileID: 215172199}
+  m_Layer: 0
+  m_Name: Plane
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!64 &215172199
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 215172198}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &215172200
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 215172198}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 73c176f402d2c2f4d929aa5da7585d17, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &215172201
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 215172198}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &215172202
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 215172198}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -150, z: 0}
+  m_LocalScale: {x: 2000, y: 1, z: 2000}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &319812253 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3542498559461772100, guid: 8dace69ce480d8641ad4169da72b056d, type: 3}
@@ -744,6 +873,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cd3270ab9a5ef442a7c7bae3f1fe392, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RotateHelice
+  rotateVector: {x: 0, y: 0, z: 0}
+  rotateSpeed: 0
 --- !u!1 &349089154 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -708480133372829912, guid: 8dace69ce480d8641ad4169da72b056d, type: 3}
@@ -761,6 +892,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cd3270ab9a5ef442a7c7bae3f1fe392, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RotateHelice
+  rotateVector: {x: 0, y: 0, z: 0}
+  rotateSpeed: 0
 --- !u!1 &427196942 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -7681955677741176589, guid: 8dace69ce480d8641ad4169da72b056d, type: 3}
@@ -778,6 +911,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cd3270ab9a5ef442a7c7bae3f1fe392, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RotateHelice
+  rotateVector: {x: 0, y: 0, z: 0}
+  rotateSpeed: 0
 --- !u!1 &429719134 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8497949808885678204, guid: 8dace69ce480d8641ad4169da72b056d, type: 3}
@@ -795,6 +930,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cd3270ab9a5ef442a7c7bae3f1fe392, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RotateHelice
+  rotateVector: {x: 0, y: 0, z: 0}
+  rotateSpeed: 0
 --- !u!1 &432432459
 GameObject:
   m_ObjectHideFlags: 0
@@ -861,6 +998,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cd3270ab9a5ef442a7c7bae3f1fe392, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RotateHelice
+  rotateVector: {x: 0, y: 0, z: 0}
+  rotateSpeed: 0
 --- !u!1 &611060750 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6174394894539927723, guid: 8dace69ce480d8641ad4169da72b056d, type: 3}
@@ -878,6 +1017,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cd3270ab9a5ef442a7c7bae3f1fe392, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RotateHelice
+  rotateVector: {x: 0, y: 0, z: 0}
+  rotateSpeed: 0
 --- !u!1 &722176370 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4720430287671697522, guid: 8dace69ce480d8641ad4169da72b056d, type: 3}
@@ -895,6 +1036,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cd3270ab9a5ef442a7c7bae3f1fe392, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RotateHelice
+  rotateVector: {x: 0, y: 0, z: 0}
+  rotateSpeed: 0
 --- !u!1 &745205351 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8662819966578325711, guid: 8dace69ce480d8641ad4169da72b056d, type: 3}
@@ -912,6 +1055,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cd3270ab9a5ef442a7c7bae3f1fe392, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RotateHelice
+  rotateVector: {x: 0, y: 0, z: 0}
+  rotateSpeed: 0
 --- !u!1 &768400676 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -6109780917554822877, guid: 8dace69ce480d8641ad4169da72b056d, type: 3}
@@ -929,6 +1074,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cd3270ab9a5ef442a7c7bae3f1fe392, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RotateHelice
+  rotateVector: {x: 0, y: 0, z: 0}
+  rotateSpeed: 0
 --- !u!1 &808587582 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3537258496911914351, guid: 8dace69ce480d8641ad4169da72b056d, type: 3}
@@ -946,6 +1093,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cd3270ab9a5ef442a7c7bae3f1fe392, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RotateHelice
+  rotateVector: {x: 0, y: 0, z: 0}
+  rotateSpeed: 0
 --- !u!1 &833734263 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7504226780082535895, guid: 8dace69ce480d8641ad4169da72b056d, type: 3}
@@ -963,6 +1112,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cd3270ab9a5ef442a7c7bae3f1fe392, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RotateHelice
+  rotateVector: {x: 0, y: 0, z: 0}
+  rotateSpeed: 0
 --- !u!1 &877468500 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2304593491551327290, guid: 8dace69ce480d8641ad4169da72b056d, type: 3}
@@ -980,6 +1131,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cd3270ab9a5ef442a7c7bae3f1fe392, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RotateHelice
+  rotateVector: {x: 0, y: 0, z: 0}
+  rotateSpeed: 0
 --- !u!1 &1111970097 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -3974339313795075614, guid: 8dace69ce480d8641ad4169da72b056d, type: 3}
@@ -997,6 +1150,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cd3270ab9a5ef442a7c7bae3f1fe392, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RotateHelice
+  rotateVector: {x: 0, y: 0, z: 0}
+  rotateSpeed: 0
 --- !u!1 &1117058261 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -7090835762513772915, guid: 8dace69ce480d8641ad4169da72b056d, type: 3}
@@ -1014,6 +1169,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cd3270ab9a5ef442a7c7bae3f1fe392, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RotateHelice
+  rotateVector: {x: 0, y: 0, z: 0}
+  rotateSpeed: 0
 --- !u!1 &1140012654 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7888883098247742853, guid: 8dace69ce480d8641ad4169da72b056d, type: 3}
@@ -1031,6 +1188,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cd3270ab9a5ef442a7c7bae3f1fe392, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RotateHelice
+  rotateVector: {x: 0, y: 0, z: 0}
+  rotateSpeed: 0
 --- !u!1 &1170723827 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -3282044315611405045, guid: 8dace69ce480d8641ad4169da72b056d, type: 3}
@@ -1048,6 +1207,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cd3270ab9a5ef442a7c7bae3f1fe392, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RotateHelice
+  rotateVector: {x: 0, y: 0, z: 0}
+  rotateSpeed: 0
 --- !u!1 &1212096678 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6042836875479974062, guid: 8dace69ce480d8641ad4169da72b056d, type: 3}
@@ -1065,6 +1226,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cd3270ab9a5ef442a7c7bae3f1fe392, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RotateHelice
+  rotateVector: {x: 0, y: 0, z: 0}
+  rotateSpeed: 0
 --- !u!1 &1261105685 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5391261796602634763, guid: 8dace69ce480d8641ad4169da72b056d, type: 3}
@@ -1082,6 +1245,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cd3270ab9a5ef442a7c7bae3f1fe392, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RotateHelice
+  rotateVector: {x: 0, y: 0, z: 0}
+  rotateSpeed: 0
 --- !u!1 &1334257630 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4192767270225543484, guid: 8dace69ce480d8641ad4169da72b056d, type: 3}
@@ -1099,6 +1264,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cd3270ab9a5ef442a7c7bae3f1fe392, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RotateHelice
+  rotateVector: {x: 0, y: 0, z: 0}
+  rotateSpeed: 0
 --- !u!1 &1356993258 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3593851600910112146, guid: 8dace69ce480d8641ad4169da72b056d, type: 3}
@@ -1116,6 +1283,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cd3270ab9a5ef442a7c7bae3f1fe392, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RotateHelice
+  rotateVector: {x: 0, y: 0, z: 0}
+  rotateSpeed: 0
 --- !u!1 &1421769719 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -679005810368305828, guid: 8dace69ce480d8641ad4169da72b056d, type: 3}
@@ -1133,6 +1302,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cd3270ab9a5ef442a7c7bae3f1fe392, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RotateHelice
+  rotateVector: {x: 0, y: 0, z: 0}
+  rotateSpeed: 0
 --- !u!1 &1421782578 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7303296905412733609, guid: 8dace69ce480d8641ad4169da72b056d, type: 3}
@@ -1150,6 +1321,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cd3270ab9a5ef442a7c7bae3f1fe392, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RotateHelice
+  rotateVector: {x: 0, y: 0, z: 0}
+  rotateSpeed: 0
 --- !u!1 &1600760714 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7650823203924006670, guid: 8dace69ce480d8641ad4169da72b056d, type: 3}
@@ -1167,6 +1340,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cd3270ab9a5ef442a7c7bae3f1fe392, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RotateHelice
+  rotateVector: {x: 0, y: 0, z: 0}
+  rotateSpeed: 0
 --- !u!1 &1621799965 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8657670054309905847, guid: 8dace69ce480d8641ad4169da72b056d, type: 3}
@@ -1184,6 +1359,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cd3270ab9a5ef442a7c7bae3f1fe392, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RotateHelice
+  rotateVector: {x: 0, y: 0, z: 0}
+  rotateSpeed: 0
 --- !u!1 &1685274995 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2080557159501458921, guid: 8dace69ce480d8641ad4169da72b056d, type: 3}
@@ -1201,6 +1378,70 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cd3270ab9a5ef442a7c7bae3f1fe392, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RotateHelice
+  rotateVector: {x: 0, y: 0, z: 0}
+  rotateSpeed: 0
+--- !u!1 &1707576026
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1707576028}
+  - component: {fileID: 1707576027}
+  m_Layer: 0
+  m_Name: Decal Projector
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1707576027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1707576026}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f19d9143a39eb3b46bc4563e9889cfbd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.RenderPipelines.HighDefinition.Runtime::UnityEngine.Rendering.HighDefinition.DecalProjector
+  m_Material: {fileID: 2100000, guid: e6ed69f33c118d14ab5bdbf0f77bc1a6, type: 2}
+  m_DrawDistance: 1000
+  m_FadeScale: 0.67
+  m_StartAngleFade: 180
+  m_EndAngleFade: 180
+  m_UVScale: {x: 1, y: 1}
+  m_UVBias: {x: 0, y: 0}
+  m_AffectsTransparency: 0
+  m_TransparentTextureResolution:
+    m_Override: 256
+    m_UseOverride: 1
+    m_Level: 0
+  m_DecalLayerMask: 1
+  m_ScaleMode: 0
+  m_Offset: {x: 0, y: 0, z: 0}
+  m_Size: {x: 13, y: 6.43, z: 9.67}
+  m_FadeFactor: 0.452
+  m_Version: 3
+--- !u!4 &1707576028
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1707576026}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -61.83, y: -0.48, z: -12.55}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1 &1777690936 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -1238494454558507635, guid: 8dace69ce480d8641ad4169da72b056d, type: 3}
@@ -1218,6 +1459,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cd3270ab9a5ef442a7c7bae3f1fe392, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RotateHelice
+  rotateVector: {x: 0, y: 0, z: 0}
+  rotateSpeed: 0
 --- !u!1 &1918675060 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -6263097727760594255, guid: 8dace69ce480d8641ad4169da72b056d, type: 3}
@@ -1235,6 +1478,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cd3270ab9a5ef442a7c7bae3f1fe392, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RotateHelice
+  rotateVector: {x: 0, y: 0, z: 0}
+  rotateSpeed: 0
 --- !u!1 &1947981678 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -7897826824233338627, guid: 8dace69ce480d8641ad4169da72b056d, type: 3}
@@ -1252,6 +1497,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cd3270ab9a5ef442a7c7bae3f1fe392, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RotateHelice
+  rotateVector: {x: 0, y: 0, z: 0}
+  rotateSpeed: 0
 --- !u!1 &1972187124
 GameObject:
   m_ObjectHideFlags: 1
@@ -1319,6 +1566,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cd3270ab9a5ef442a7c7bae3f1fe392, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RotateHelice
+  rotateVector: {x: 0, y: 0, z: 0}
+  rotateSpeed: 0
 --- !u!1 &2007878682 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2678409384389058986, guid: 8dace69ce480d8641ad4169da72b056d, type: 3}
@@ -1336,6 +1585,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cd3270ab9a5ef442a7c7bae3f1fe392, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RotateHelice
+  rotateVector: {x: 0, y: 0, z: 0}
+  rotateSpeed: 0
 --- !u!1 &2013410473
 GameObject:
   m_ObjectHideFlags: 1
@@ -1402,6 +1653,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cd3270ab9a5ef442a7c7bae3f1fe392, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RotateHelice
+  rotateVector: {x: 0, y: 0, z: 0}
+  rotateSpeed: 0
 --- !u!1 &2067509802 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -478070476143072341, guid: 8dace69ce480d8641ad4169da72b056d, type: 3}
@@ -1419,6 +1672,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cd3270ab9a5ef442a7c7bae3f1fe392, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RotateHelice
+  rotateVector: {x: 0, y: 0, z: 0}
+  rotateSpeed: 0
 --- !u!1 &2073408536 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -371585604906353137, guid: 8dace69ce480d8641ad4169da72b056d, type: 3}
@@ -1436,6 +1691,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cd3270ab9a5ef442a7c7bae3f1fe392, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RotateHelice
+  rotateVector: {x: 0, y: 0, z: 0}
+  rotateSpeed: 0
 --- !u!1 &2075382288 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -7491166329313091001, guid: 8dace69ce480d8641ad4169da72b056d, type: 3}
@@ -1453,6 +1710,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cd3270ab9a5ef442a7c7bae3f1fe392, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RotateHelice
+  rotateVector: {x: 0, y: 0, z: 0}
+  rotateSpeed: 0
 --- !u!1 &2142595552 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -8292173547771782245, guid: 8dace69ce480d8641ad4169da72b056d, type: 3}
@@ -1470,6 +1729,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cd3270ab9a5ef442a7c7bae3f1fe392, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RotateHelice
+  rotateVector: {x: 0, y: 0, z: 0}
+  rotateSpeed: 0
 --- !u!1001 &2147235785
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1850,6 +2111,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: -5132131466142579137, guid: 8dace69ce480d8641ad4169da72b056d, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: c4197cbaf4f66a84380867becc29f147, type: 2}
     - target: {fileID: -5118827933780264377, guid: 8dace69ce480d8641ad4169da72b056d, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
@@ -2062,6 +2327,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: -2349074275962329527, guid: 8dace69ce480d8641ad4169da72b056d, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 25ec0360f0f8a464db919c87d55da6e6, type: 2}
     - target: {fileID: -2204688123693360499, guid: 8dace69ce480d8641ad4169da72b056d, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
@@ -2313,6 +2582,18 @@ PrefabInstance:
     - target: {fileID: 385430179754271796, guid: 8dace69ce480d8641ad4169da72b056d, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 456006225782591653, guid: 8dace69ce480d8641ad4169da72b056d, type: 3}
+      propertyPath: m_ReceiveGI
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 456006225782591653, guid: 8dace69ce480d8641ad4169da72b056d, type: 3}
+      propertyPath: m_ImportantGI
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 456006225782591653, guid: 8dace69ce480d8641ad4169da72b056d, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 468394434276095673, guid: 8dace69ce480d8641ad4169da72b056d, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -2706,6 +2987,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 5593221035346306149, guid: 8dace69ce480d8641ad4169da72b056d, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 25ec0360f0f8a464db919c87d55da6e6, type: 2}
     - target: {fileID: 5625483580231779416, guid: 8dace69ce480d8641ad4169da72b056d, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
@@ -2719,9 +3004,13 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 7b46481d03bb6be42a2002c4f8d0c5cc, type: 2}
     - target: {fileID: 5887977036591485177, guid: 8dace69ce480d8641ad4169da72b056d, type: 3}
+      propertyPath: m_RendererPriority
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5887977036591485177, guid: 8dace69ce480d8641ad4169da72b056d, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: fa61f1d8bfc718c489a560b9b7dc6c40, type: 2}
+      objectReference: {fileID: 2100000, guid: c4197cbaf4f66a84380867becc29f147, type: 2}
     - target: {fileID: 5892061736219661337, guid: 8dace69ce480d8641ad4169da72b056d, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
@@ -3181,7 +3470,37 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -1238494454558507635, guid: 8dace69ce480d8641ad4169da72b056d, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1777690938}
+    - targetCorrespondingSourceObject: {fileID: 138260451009870064, guid: 8dace69ce480d8641ad4169da72b056d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2147235787}
   m_SourcePrefab: {fileID: 100100000, guid: 8dace69ce480d8641ad4169da72b056d, type: 3}
+--- !u!1 &2147235786 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 138260451009870064, guid: 8dace69ce480d8641ad4169da72b056d, type: 3}
+  m_PrefabInstance: {fileID: 2147235785}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &2147235787
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2147235786}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 7045310777449480864, guid: 8dace69ce480d8641ad4169da72b056d, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -3192,3 +3511,5 @@ SceneRoots:
   - {fileID: 2013410475}
   - {fileID: 2147235785}
   - {fileID: 1972187126}
+  - {fileID: 215172202}
+  - {fileID: 1707576028}

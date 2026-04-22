@@ -2321,10 +2321,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1411.999755859375,
-            "y": -2242.000244140625,
+            "x": -1393.0,
+            "y": -2244.0,
             "width": 208.0,
-            "height": 326.0001220703125
+            "height": 326.0
         }
     },
     "m_Slots": [
@@ -3667,17 +3667,17 @@
     "m_Type": "UnityEditor.ShaderGraph.PropertyNode",
     "m_ObjectId": "4e04391fdae04d3fa5ba4be02673f02d",
     "m_Group": {
-        "m_Id": ""
+        "m_Id": "73bc57f5e82c425ea5622c1c7a8961d1"
     },
     "m_Name": "Property",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1855.0672607421875,
-            "y": -2210.27490234375,
-            "width": 0.0,
-            "height": 0.0
+            "x": -2093.0,
+            "y": -2194.0,
+            "width": 167.0,
+            "height": 34.0
         }
     },
     "m_Slots": [
@@ -4613,8 +4613,8 @@
     "m_ObjectId": "6d3fd0faf53844718de2bfa6a2af60aa",
     "m_Title": "Edges",
     "m_Position": {
-        "x": -1638.4002685546875,
-        "y": -800.8001708984375
+        "x": -1638.0,
+        "y": -799.0
     }
 }
 
@@ -4811,8 +4811,8 @@
     "m_ObjectId": "73bc57f5e82c425ea5622c1c7a8961d1",
     "m_Title": "WaterColor",
     "m_Position": {
-        "x": -1696.000244140625,
-        "y": -2302.400634765625
+        "x": -2118.0,
+        "y": -2303.0
     }
 }
 
@@ -4907,10 +4907,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1670.9998779296875,
-            "y": -2242.000244140625,
+            "x": -1926.0,
+            "y": -2204.0,
             "width": 208.0,
-            "height": 279.0001220703125
+            "height": 279.0
         }
     },
     "m_Slots": [
@@ -8275,8 +8275,8 @@
     "m_ObjectId": "f8aa112500b54c9f87ba39225b9aaf4d",
     "m_Title": "Foam",
     "m_Position": {
-        "x": -1581.6002197265625,
-        "y": -1761.600341796875
+        "x": -1581.0,
+        "y": -1760.0
     }
 }
 
