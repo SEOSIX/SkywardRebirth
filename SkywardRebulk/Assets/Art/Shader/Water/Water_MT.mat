@@ -75,16 +75,18 @@ Material:
     - _EnableBlendModePreserveSpecularLighting: 1
     - _EnableFogOnTransparent: 1
     - _ExcludeFromTUAndAA: 0
-    - _FoamAmount: 3.9
-    - _FoamCuttOff: 4.2
-    - _FoamScale: 100
+    - _FoamAmount: 1
+    - _FoamCuttOff: 3.9
+    - _FoamFallOff: 0
+    - _FoamScale: 120.31
+    - _FoamSoftness: 9.1
     - _FoamSpeed: 1
-    - _FresnelEffect: 62.55
-    - _IntersectionPower: 14.9
+    - _FresnelEffect: 1
+    - _IntersectionPower: 18.1
     - _MaterialID: 1
     - _MaterialTypeMask: 2
     - _NormalStrength: 183.48
-    - _OcclusionStrength: 4.85
+    - _OcclusionStrength: 1
     - _Opacity: 1
     - _OpaqueCullMode: 2
     - _PerPixelSorting: 1
@@ -121,13 +123,14 @@ Material:
     - _ZTestTransparent: 4
     - _ZWrite: 0
     m_Colors:
-    - _Depth1: {r: 0.26629555, g: 0.8117647, b: 0.14117643, a: 0.44313726}
+    - _Depth1: {r: 0.1411764, g: 0.8117647, b: 0.33739993, a: 0.79607844}
     - _Depth2: {r: 0, g: 0.1427959, b: 0.3490566, a: 1}
     - _DissortDir: {r: -0.05, g: -0.05, b: 0, a: 0}
     - _DoubleSidedConstants: {r: 1, g: 1, b: 1, a: 0}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
-    - _FoamColor: {r: 1, g: 1, b: 1, a: 1}
+    - _FoamColor: {r: 1, g: 1, b: 1, a: 0.81960785}
     - _FoamDir: {r: 0.94, g: 0.98, b: 0, a: 0}
+    - _JSPCQUOI: {r: 1.1, g: 1.1, b: 1.1, a: 1.1}
     - _ScrollDirection: {r: -0.05, g: -0.05, b: 0, a: 0}
     - _Tiling: {r: 3, g: 3, b: 0, a: 0}
   m_BuildTextureStacks: []
