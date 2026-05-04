@@ -4,6 +4,7 @@ using UnityEngine;
 public class PlayerJump : MonoBehaviour
 {
     private bool _isGrounded;
+    private bool _groundFront;
     private bool _hasJumped = false;
     private float _playerHalfHeight;
 
@@ -15,6 +16,8 @@ public class PlayerJump : MonoBehaviour
     private void FixedUpdate()
     {
         _isGrounded = CheckGrounded();
+        _groundFront =  GroundInFront();
+        Debug.Log($"grounded{_isGrounded} + ground in front {_groundFront}");
         AutoJump();
     }
 
@@ -23,22 +26,17 @@ public class PlayerJump : MonoBehaviour
         var data = Player.instance._data.controllerData;
         float offset = 0.01f;
 
-        Vector3 origin = transform.position - Vector3.up * _playerHalfHeight;
+        Vector3 origin = transform.position - Vector3.up * (_playerHalfHeight - offset);
         float maxDistance = data.groundCheckDistance + offset;
         
-        bool isGrounded = Physics.Raycast(origin, Vector3.down, maxDistance, data.groundLayer);
-
-        if (!isGrounded)
+        bool isGrounded = !Physics.Raycast(origin, Vector3.down, maxDistance, data.groundLayer);
+        if (isGrounded)
             _hasJumped = false;
-
         return isGrounded;
     }
 
-    private void AutoJump()
+    private bool GroundInFront()
     {
-        if (_hasJumped) return;
-        if (!_isGrounded) return;
-
         var data = Player.instance._data.controllerData;
 
         Vector3 horizontalVelocity = new Vector3(
@@ -47,24 +45,37 @@ public class PlayerJump : MonoBehaviour
         );
 
         float speed = horizontalVelocity.magnitude;
-        if (speed < data.minSpeedToJump) return;
+        //if (speed < data.minSpeedToJump) return;
 
-        
         Vector3 moveDirection = horizontalVelocity.magnitude > 0.01f 
             ? horizontalVelocity.normalized 
             : transform.forward;
-        Vector3 feetPosition = transform.position;
-        Vector3 rayOrigin = feetPosition + moveDirection * data.edgeDetectDistance;
 
-        bool noGroundInFront = !Physics.Raycast(rayOrigin, Vector3.down, out RaycastHit hit, data.maxFallHeight, data.groundLayer);
-        if (noGroundInFront)
+        Vector3 rayOrigin = transform.position + moveDirection * data.edgeDetectDistance;
+
+        bool groundInFront = Physics.Raycast(rayOrigin, Vector3.down, out RaycastHit hit, data.maxFallHeight, data.groundLayer);
+        if (groundInFront)
+            return true;
+        else
+        {
+            return false;
+        }
+    }
+
+    private void AutoJump()
+    {
+        if (_hasJumped) return;
+        if (!_isGrounded) return;
+
+        if (GroundInFront())
+        {
             Jump();
+        }
     }
 
     private void Jump()
     {
         _hasJumped = true;
-
         Vector3 vel = Player.instance.rigidbody.linearVelocity;
         vel.y = Player.instance._data.controllerData.jumpForce;
         Player.instance.rigidbody.linearVelocity = vel;

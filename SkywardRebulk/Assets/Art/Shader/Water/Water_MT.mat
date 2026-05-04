@@ -12,11 +12,11 @@ Material:
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
-  - _DISABLE_SSR_TRANSPARENT
   - _ENABLE_FOG_ON_TRANSPARENT
   - _SURFACE_TYPE_TRANSPARENT
   - _TRANSPARENT_REFRACTIVE_SORT
-  m_InvalidKeywords: []
+  m_InvalidKeywords:
+  - _DISABLE_SSR_TRANSPARENT
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -64,7 +64,7 @@ Material:
     - _ConservativeDepthOffsetEnable: 0
     - _CullMode: 2
     - _CullModeForward: 2
-    - _DepthFadeAmout: 3.9
+    - _DepthFadeAmout: 0
     - _DepthOffsetEnable: 0
     - _DissortStrenght: 20.12
     - _DoubleSidedEnable: 0
@@ -75,19 +75,19 @@ Material:
     - _EnableBlendModePreserveSpecularLighting: 1
     - _EnableFogOnTransparent: 1
     - _ExcludeFromTUAndAA: 0
-    - _FoamAmount: 1
-    - _FoamCuttOff: 3.9
+    - _FoamAmount: 0
+    - _FoamCuttOff: 0
     - _FoamFallOff: 0
-    - _FoamScale: 120.31
-    - _FoamSoftness: 9.1
-    - _FoamSpeed: 1
-    - _FresnelEffect: 1
+    - _FoamScale: 0
+    - _FoamSoftness: 0
+    - _FoamSpeed: 0
+    - _FresnelEffect: 0
     - _IntersectionPower: 18.1
     - _MaterialID: 1
     - _MaterialTypeMask: 2
     - _NormalStrength: 183.48
-    - _OcclusionStrength: 1
-    - _Opacity: 1
+    - _OcclusionStrength: 0
+    - _Opacity: 0
     - _OpaqueCullMode: 2
     - _PerPixelSorting: 1
     - _RayTracing: 0
@@ -98,15 +98,15 @@ Material:
     - _RequireSplitLighting: 0
     - _SrcBlend: 1
     - _StencilRef: 0
-    - _StencilRefDepth: 0
+    - _StencilRefDepth: 1
     - _StencilRefDistortionVec: 4
     - _StencilRefGBuffer: 2
-    - _StencilRefMV: 32
+    - _StencilRefMV: 33
     - _StencilWriteMask: 6
     - _StencilWriteMaskDepth: 9
     - _StencilWriteMaskDistortionVec: 4
     - _StencilWriteMaskGBuffer: 15
-    - _StencilWriteMaskMV: 41
+    - _StencilWriteMaskMV: 43
     - _SupportDecals: 1
     - _SurfaceType: 1
     - _TransmissionEnable: 1
@@ -123,14 +123,14 @@ Material:
     - _ZTestTransparent: 4
     - _ZWrite: 0
     m_Colors:
-    - _Depth1: {r: 0.1411764, g: 0.8117647, b: 0.33739993, a: 0.79607844}
-    - _Depth2: {r: 0, g: 0.1427959, b: 0.3490566, a: 1}
+    - _Depth1: {r: 1, g: 1, b: 1, a: 0}
+    - _Depth2: {r: 1, g: 1, b: 1, a: 0}
     - _DissortDir: {r: -0.05, g: -0.05, b: 0, a: 0}
     - _DoubleSidedConstants: {r: 1, g: 1, b: 1, a: 0}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
-    - _FoamColor: {r: 1, g: 1, b: 1, a: 0.81960785}
-    - _FoamDir: {r: 0.94, g: 0.98, b: 0, a: 0}
-    - _JSPCQUOI: {r: 1.1, g: 1.1, b: 1.1, a: 1.1}
+    - _FoamColor: {r: 1, g: 1, b: 1, a: 0}
+    - _FoamDir: {r: 0, g: 0, b: 0, a: 0}
+    - _JSPCQUOI: {r: 0, g: 0, b: 0, a: 0}
     - _ScrollDirection: {r: -0.05, g: -0.05, b: 0, a: 0}
     - _Tiling: {r: 3, g: 3, b: 0, a: 0}
   m_BuildTextureStacks: []

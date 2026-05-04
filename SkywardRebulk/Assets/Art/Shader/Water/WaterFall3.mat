@@ -66,6 +66,7 @@ Material:
     - _CullModeForward: 2
     - _DepthOffsetEnable: 0
     - _DiffractionForce: 40.47
+    - _Disolve_End: 0
     - _DisstorStrength: 2.88
     - _DoubleSidedEnable: 0
     - _DoubleSidedGIMode: 0

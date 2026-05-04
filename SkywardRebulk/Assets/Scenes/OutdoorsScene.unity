@@ -218,8 +218,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cd3270ab9a5ef442a7c7bae3f1fe392, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RotateHelice
-  rotateVector: {x: 0, y: 0, z: 0}
-  rotateSpeed: 0
 --- !u!64 &20697045
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -401,8 +399,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cd3270ab9a5ef442a7c7bae3f1fe392, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RotateHelice
-  rotateVector: {x: 0, y: 0, z: 0}
-  rotateSpeed: 0
 --- !u!64 &46418250
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -532,7 +528,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: bcd3d226fdb9de34bab1035eeaa1265c, type: 2}
+  - {fileID: 2100000, guid: 542927068eec00a4db8f77f57613bf18, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -666,8 +662,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cd3270ab9a5ef442a7c7bae3f1fe392, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RotateHelice
-  rotateVector: {x: 0, y: 0, z: 0}
-  rotateSpeed: 0
 --- !u!1 &118154320 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -5457581752887349688, guid: 8dace69ce480d8641ad4169da72b056d, type: 3}
@@ -685,8 +679,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cd3270ab9a5ef442a7c7bae3f1fe392, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RotateHelice
-  rotateVector: {x: 0, y: 0, z: 0}
-  rotateSpeed: 0
 --- !u!1 &134788753 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7294682807335758481, guid: 8dace69ce480d8641ad4169da72b056d, type: 3}
@@ -704,8 +696,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cd3270ab9a5ef442a7c7bae3f1fe392, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RotateHelice
-  rotateVector: {x: 0, y: 0, z: 0}
-  rotateSpeed: 0
 --- !u!1 &140268533
 GameObject:
   m_ObjectHideFlags: 0
@@ -977,8 +967,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cd3270ab9a5ef442a7c7bae3f1fe392, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RotateHelice
-  rotateVector: {x: 0, y: 0, z: 0}
-  rotateSpeed: 0
 --- !u!1 &157207112
 GameObject:
   m_ObjectHideFlags: 0
@@ -1136,7 +1124,7 @@ MonoBehaviour:
   earthshine: 1
   flareSize: 5.3
   flareTint: {r: 1, g: 1, b: 1, a: 1}
-  flareFalloff: 4
+  flareFalloff: 17.17
   flareMultiplier: 1
   surfaceTexture: {fileID: 0}
   surfaceTint: {r: 1, g: 1, b: 1, a: 1}
@@ -1564,8 +1552,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cd3270ab9a5ef442a7c7bae3f1fe392, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RotateHelice
-  rotateVector: {x: 0, y: 0, z: 0}
-  rotateSpeed: 0
 --- !u!64 &194543870
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1829,8 +1815,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cd3270ab9a5ef442a7c7bae3f1fe392, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RotateHelice
-  rotateVector: {x: 0, y: 0, z: 0}
-  rotateSpeed: 0
 --- !u!1 &215172198
 GameObject:
   m_ObjectHideFlags: 0
@@ -2371,8 +2355,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cd3270ab9a5ef442a7c7bae3f1fe392, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RotateHelice
-  rotateVector: {x: 0, y: 0, z: 0}
-  rotateSpeed: 0
 --- !u!64 &346144629
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2554,8 +2536,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cd3270ab9a5ef442a7c7bae3f1fe392, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RotateHelice
-  rotateVector: {x: 0, y: 0, z: 0}
-  rotateSpeed: 0
 --- !u!64 &358971622
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3311,8 +3291,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cd3270ab9a5ef442a7c7bae3f1fe392, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RotateHelice
-  rotateVector: {x: 0, y: 0, z: 0}
-  rotateSpeed: 0
 --- !u!1 &429719134 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8497949808885678204, guid: 8dace69ce480d8641ad4169da72b056d, type: 3}
@@ -3330,8 +3308,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cd3270ab9a5ef442a7c7bae3f1fe392, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RotateHelice
-  rotateVector: {x: 0, y: 0, z: 0}
-  rotateSpeed: 0
 --- !u!1 &432432459
 GameObject:
   m_ObjectHideFlags: 0
@@ -3398,8 +3374,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cd3270ab9a5ef442a7c7bae3f1fe392, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RotateHelice
-  rotateVector: {x: 0, y: 0, z: 0}
-  rotateSpeed: 0
 --- !u!64 &437690488
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3728,88 +3702,6 @@ SkinnedMeshRenderer:
     m_Center: {x: -38.67035, y: 8.892071, z: 23.559391}
     m_Extent: {x: 75.40295, y: 6.3634005, z: 10.20882}
   m_DirtyAABB: 0
---- !u!64 &505687982
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2147235888}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 1906525365963556911, guid: 8dace69ce480d8641ad4169da72b056d, type: 3}
---- !u!137 &505687983
-SkinnedMeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2147235888}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 3
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_ForceMeshLod: -1
-  m_MeshLodSelectionBias: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: d02fb0ea1e91ded4ca0655ddc03b3659, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_MaskInteraction: 0
-  serializedVersion: 2
-  m_Quality: 0
-  m_UpdateWhenOffscreen: 0
-  m_SkinnedMotionVectors: 1
-  m_Mesh: {fileID: 1906525365963556911, guid: 8dace69ce480d8641ad4169da72b056d, type: 3}
-  m_Bones: []
-  m_BlendShapeWeights: []
-  m_RootBone: {fileID: 0}
-  m_AABB:
-    m_Center: {x: -10.158081, y: 12.96309, z: -46.659073}
-    m_Extent: {x: 104.12181, y: 11.823621, z: 83.546326}
-  m_DirtyAABB: 0
 --- !u!1 &611060750 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6174394894539927723, guid: 8dace69ce480d8641ad4169da72b056d, type: 3}
@@ -3827,8 +3719,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cd3270ab9a5ef442a7c7bae3f1fe392, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RotateHelice
-  rotateVector: {x: 0, y: 0, z: 0}
-  rotateSpeed: 0
 --- !u!64 &650254469
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4256,8 +4146,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cd3270ab9a5ef442a7c7bae3f1fe392, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RotateHelice
-  rotateVector: {x: 0, y: 0, z: 0}
-  rotateSpeed: 0
 --- !u!64 &728853471
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4357,8 +4245,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cd3270ab9a5ef442a7c7bae3f1fe392, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RotateHelice
-  rotateVector: {x: 0, y: 0, z: 0}
-  rotateSpeed: 0
 --- !u!64 &752658453
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4622,8 +4508,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cd3270ab9a5ef442a7c7bae3f1fe392, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RotateHelice
-  rotateVector: {x: 0, y: 0, z: 0}
-  rotateSpeed: 0
 --- !u!1 &808587582 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3537258496911914351, guid: 8dace69ce480d8641ad4169da72b056d, type: 3}
@@ -4641,8 +4525,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cd3270ab9a5ef442a7c7bae3f1fe392, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RotateHelice
-  rotateVector: {x: 0, y: 0, z: 0}
-  rotateSpeed: 0
 --- !u!64 &813633796
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4824,8 +4706,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cd3270ab9a5ef442a7c7bae3f1fe392, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RotateHelice
-  rotateVector: {x: 0, y: 0, z: 0}
-  rotateSpeed: 0
 --- !u!64 &842023229
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -5231,8 +5111,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cd3270ab9a5ef442a7c7bae3f1fe392, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RotateHelice
-  rotateVector: {x: 0, y: 0, z: 0}
-  rotateSpeed: 0
 --- !u!64 &878130925
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7218,8 +7096,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cd3270ab9a5ef442a7c7bae3f1fe392, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RotateHelice
-  rotateVector: {x: 0, y: 0, z: 0}
-  rotateSpeed: 0
 --- !u!1 &1117058261 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -7090835762513772915, guid: 8dace69ce480d8641ad4169da72b056d, type: 3}
@@ -7237,8 +7113,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cd3270ab9a5ef442a7c7bae3f1fe392, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RotateHelice
-  rotateVector: {x: 0, y: 0, z: 0}
-  rotateSpeed: 0
 --- !u!64 &1123403192
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7420,8 +7294,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cd3270ab9a5ef442a7c7bae3f1fe392, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RotateHelice
-  rotateVector: {x: 0, y: 0, z: 0}
-  rotateSpeed: 0
 --- !u!1 &1170723827 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -3282044315611405045, guid: 8dace69ce480d8641ad4169da72b056d, type: 3}
@@ -7439,8 +7311,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cd3270ab9a5ef442a7c7bae3f1fe392, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RotateHelice
-  rotateVector: {x: 0, y: 0, z: 0}
-  rotateSpeed: 0
 --- !u!64 &1177757670
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7786,8 +7656,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cd3270ab9a5ef442a7c7bae3f1fe392, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RotateHelice
-  rotateVector: {x: 0, y: 0, z: 0}
-  rotateSpeed: 0
 --- !u!64 &1217452044
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -8051,8 +7919,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cd3270ab9a5ef442a7c7bae3f1fe392, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RotateHelice
-  rotateVector: {x: 0, y: 0, z: 0}
-  rotateSpeed: 0
 --- !u!64 &1272192749
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -8567,8 +8433,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cd3270ab9a5ef442a7c7bae3f1fe392, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RotateHelice
-  rotateVector: {x: 0, y: 0, z: 0}
-  rotateSpeed: 0
 --- !u!64 &1336546879
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -8668,8 +8532,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cd3270ab9a5ef442a7c7bae3f1fe392, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RotateHelice
-  rotateVector: {x: 0, y: 0, z: 0}
-  rotateSpeed: 0
 --- !u!64 &1362637747
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -8799,7 +8661,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 640a6b933f6e8b74dbed270dc0965d11, type: 2}
+  - {fileID: 2100000, guid: ccfa504565ff9cc4eb4dca4b12794640, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -9179,8 +9041,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cd3270ab9a5ef442a7c7bae3f1fe392, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RotateHelice
-  rotateVector: {x: 0, y: 0, z: 0}
-  rotateSpeed: 0
 --- !u!1 &1421782578 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7303296905412733609, guid: 8dace69ce480d8641ad4169da72b056d, type: 3}
@@ -9198,8 +9058,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cd3270ab9a5ef442a7c7bae3f1fe392, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RotateHelice
-  rotateVector: {x: 0, y: 0, z: 0}
-  rotateSpeed: 0
 --- !u!64 &1427792559
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -9575,7 +9433,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 09e1c37329fe8694da53c27f52b32900, type: 2}
+  - {fileID: 2100000, guid: 803ef1314f28f7e43aed1726bf027fd4, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -10239,8 +10097,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cd3270ab9a5ef442a7c7bae3f1fe392, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RotateHelice
-  rotateVector: {x: 0, y: 0, z: 0}
-  rotateSpeed: 0
 --- !u!64 &1612380311
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -10340,8 +10196,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cd3270ab9a5ef442a7c7bae3f1fe392, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RotateHelice
-  rotateVector: {x: 0, y: 0, z: 0}
-  rotateSpeed: 0
 --- !u!64 &1629991655
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -10829,8 +10683,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cd3270ab9a5ef442a7c7bae3f1fe392, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RotateHelice
-  rotateVector: {x: 0, y: 0, z: 0}
-  rotateSpeed: 0
 --- !u!64 &1688428185
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -11051,7 +10903,7 @@ Transform:
   m_GameObject: {fileID: 1707576026}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -61.83, y: -0.48, z: -12.55}
+  m_LocalPosition: {x: -61.83, y: -0.63, z: -12.55}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -11566,8 +11418,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cd3270ab9a5ef442a7c7bae3f1fe392, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RotateHelice
-  rotateVector: {x: 0, y: 0, z: 0}
-  rotateSpeed: 0
 --- !u!64 &1798815483
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -12323,8 +12173,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cd3270ab9a5ef442a7c7bae3f1fe392, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RotateHelice
-  rotateVector: {x: 0, y: 0, z: 0}
-  rotateSpeed: 0
 --- !u!64 &1939912664
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -12429,8 +12277,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cd3270ab9a5ef442a7c7bae3f1fe392, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RotateHelice
-  rotateVector: {x: 0, y: 0, z: 0}
-  rotateSpeed: 0
 --- !u!1 &1972187124
 GameObject:
   m_ObjectHideFlags: 1
@@ -12498,8 +12344,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cd3270ab9a5ef442a7c7bae3f1fe392, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RotateHelice
-  rotateVector: {x: 0, y: 0, z: 0}
-  rotateSpeed: 0
 --- !u!64 &1996810368
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -12582,25 +12426,6 @@ SkinnedMeshRenderer:
     m_Center: {x: 17.971745, y: 13.31255, z: -24.283913}
     m_Extent: {x: 57.337826, y: 8.437502, z: 94.514084}
   m_DirtyAABB: 0
---- !u!1 &2007878682 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2678409384389058986, guid: 8dace69ce480d8641ad4169da72b056d, type: 3}
-  m_PrefabInstance: {fileID: 2147235785}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2007878684
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2007878682}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1cd3270ab9a5ef442a7c7bae3f1fe392, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::RotateHelice
-  rotateVector: {x: 0, y: 0, z: 0}
-  rotateSpeed: 0
 --- !u!1 &2013410473
 GameObject:
   m_ObjectHideFlags: 1
@@ -12831,8 +12656,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cd3270ab9a5ef442a7c7bae3f1fe392, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RotateHelice
-  rotateVector: {x: 0, y: 0, z: 0}
-  rotateSpeed: 0
 --- !u!64 &2019721510
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -12880,7 +12703,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 94384a389ff822c459690c0e2b0d47c8, type: 2}
+  - {fileID: 2100000, guid: ccfa504565ff9cc4eb4dca4b12794640, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -13178,8 +13001,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cd3270ab9a5ef442a7c7bae3f1fe392, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RotateHelice
-  rotateVector: {x: 0, y: 0, z: 0}
-  rotateSpeed: 0
 --- !u!64 &2072642592
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -13279,8 +13100,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cd3270ab9a5ef442a7c7bae3f1fe392, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RotateHelice
-  rotateVector: {x: 0, y: 0, z: 0}
-  rotateSpeed: 0
 --- !u!1 &2075382288 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -7491166329313091001, guid: 8dace69ce480d8641ad4169da72b056d, type: 3}
@@ -13298,8 +13117,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cd3270ab9a5ef442a7c7bae3f1fe392, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RotateHelice
-  rotateVector: {x: 0, y: 0, z: 0}
-  rotateSpeed: 0
 --- !u!64 &2078118146
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -13705,8 +13522,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cd3270ab9a5ef442a7c7bae3f1fe392, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RotateHelice
-  rotateVector: {x: 0, y: 0, z: 0}
-  rotateSpeed: 0
 --- !u!1001 &2147235785
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13898,6 +13713,26 @@ PrefabInstance:
     - target: {fileID: -8291427056458323119, guid: 8dace69ce480d8641ad4169da72b056d, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: -8287044112578447639, guid: 8dace69ce480d8641ad4169da72b056d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.99494046
+      objectReference: {fileID: 0}
+    - target: {fileID: -8287044112578447639, guid: 8dace69ce480d8641ad4169da72b056d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 1.37205006e-14
+      objectReference: {fileID: 0}
+    - target: {fileID: -8287044112578447639, guid: 8dace69ce480d8641ad4169da72b056d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.100466885
+      objectReference: {fileID: 0}
+    - target: {fileID: -8287044112578447639, guid: 8dace69ce480d8641ad4169da72b056d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -5.1301114e-15
+      objectReference: {fileID: 0}
+    - target: {fileID: -8287044112578447639, guid: 8dace69ce480d8641ad4169da72b056d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -11.532
       objectReference: {fileID: 0}
     - target: {fileID: -8266883491988748449, guid: 8dace69ce480d8641ad4169da72b056d, type: 3}
       propertyPath: m_Layer
@@ -14354,6 +14189,10 @@ PrefabInstance:
     - target: {fileID: -5468964985782988696, guid: 8dace69ce480d8641ad4169da72b056d, type: 3}
       propertyPath: m_Layer
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -5468964985782988696, guid: 8dace69ce480d8641ad4169da72b056d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -5468964985782988696, guid: 8dace69ce480d8641ad4169da72b056d, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -16339,6 +16178,30 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 6990627887544918710, guid: 8dace69ce480d8641ad4169da72b056d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.99321485
+      objectReference: {fileID: 0}
+    - target: {fileID: 6990627887544918710, guid: 8dace69ce480d8641ad4169da72b056d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.0032996952
+      objectReference: {fileID: 0}
+    - target: {fileID: 6990627887544918710, guid: 8dace69ce480d8641ad4169da72b056d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.112540714
+      objectReference: {fileID: 0}
+    - target: {fileID: 6990627887544918710, guid: 8dace69ce480d8641ad4169da72b056d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.029121071
+      objectReference: {fileID: 0}
+    - target: {fileID: 6990627887544918710, guid: 8dace69ce480d8641ad4169da72b056d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -12.929
+      objectReference: {fileID: 0}
+    - target: {fileID: 6990627887544918710, guid: 8dace69ce480d8641ad4169da72b056d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 3.359
+      objectReference: {fileID: 0}
     - target: {fileID: 7036213049465896255, guid: 8dace69ce480d8641ad4169da72b056d, type: 3}
       propertyPath: m_Layer
       value: 3
@@ -16841,6 +16704,7 @@ PrefabInstance:
     m_RemovedGameObjects:
     - {fileID: -8700617353114198275, guid: 8dace69ce480d8641ad4169da72b056d, type: 3}
     - {fileID: -3328400148922587908, guid: 8dace69ce480d8641ad4169da72b056d, type: 3}
+    - {fileID: -8130937643486947056, guid: 8dace69ce480d8641ad4169da72b056d, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 8dace69ce480d8641ad4169da72b056d, type: 3}
       insertIndex: -1
@@ -16954,9 +16818,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -7681955677741176589, guid: 8dace69ce480d8641ad4169da72b056d, type: 3}
       insertIndex: -1
       addedObject: {fileID: 427196944}
-    - targetCorrespondingSourceObject: {fileID: 2678409384389058986, guid: 8dace69ce480d8641ad4169da72b056d, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2007878684}
     - targetCorrespondingSourceObject: {fileID: 4192767270225543484, guid: 8dace69ce480d8641ad4169da72b056d, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1334257632}
@@ -17257,12 +17118,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3674160734049752785, guid: 8dace69ce480d8641ad4169da72b056d, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1447880261}
-    - targetCorrespondingSourceObject: {fileID: -8130937643486947056, guid: 8dace69ce480d8641ad4169da72b056d, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 505687983}
-    - targetCorrespondingSourceObject: {fileID: -8130937643486947056, guid: 8dace69ce480d8641ad4169da72b056d, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 505687982}
     - targetCorrespondingSourceObject: {fileID: -2841953085121962815, guid: 8dace69ce480d8641ad4169da72b056d, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1326328049}
@@ -18391,11 +18246,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: -2841953085121962815, guid: 8dace69ce480d8641ad4169da72b056d, type: 3}
   m_PrefabInstance: {fileID: 2147235785}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &2147235888 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -8130937643486947056, guid: 8dace69ce480d8641ad4169da72b056d, type: 3}
-  m_PrefabInstance: {fileID: 2147235785}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2147235889 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3674160734049752785, guid: 8dace69ce480d8641ad4169da72b056d, type: 3}
@@ -18938,6 +18788,10 @@ PrefabInstance:
       propertyPath: _cam
       value: 
       objectReference: {fileID: 140268536}
+    - target: {fileID: 7368259852046051974, guid: bb20e610edc40764b915c7f407e62e31, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9220848067520031352, guid: bb20e610edc40764b915c7f407e62e31, type: 3}
       propertyPath: m_Name
       value: Player
