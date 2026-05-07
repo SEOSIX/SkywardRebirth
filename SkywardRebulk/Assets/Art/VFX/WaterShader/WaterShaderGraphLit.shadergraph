@@ -2875,8 +2875,8 @@
     "m_ObjectId": "0776d2c025404394b2d927c6a8900272",
     "m_Title": "Foam",
     "m_Position": {
-        "x": -3713.0,
-        "y": 1003.0000610351563
+        "x": -3713.000244140625,
+        "y": 1003.0001831054688
     }
 }
 
@@ -2929,17 +2929,17 @@
     "m_Type": "UnityEditor.ShaderGraph.PropertyNode",
     "m_ObjectId": "0890cc2d085646c38725f2eb64789b56",
     "m_Group": {
-        "m_Id": ""
+        "m_Id": "0776d2c025404394b2d927c6a8900272"
     },
     "m_Name": "Property",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -3916.313232421875,
-            "y": 1695.7353515625,
-            "width": 0.0,
-            "height": 0.0
+            "x": -3687.999755859375,
+            "y": 1467.0,
+            "width": 152.0,
+            "height": 34.0
         }
     },
     "m_Slots": [
@@ -7043,8 +7043,8 @@
     "m_ObjectId": "4fe811bec8e04174b3d13697e2102a65",
     "m_Title": "Normals",
     "m_Position": {
-        "x": -2403.0,
-        "y": 284.99981689453127
+        "x": -2403.000244140625,
+        "y": 284.9999694824219
     }
 }
 
@@ -7639,7 +7639,7 @@
     "m_ObjectId": "570877ab06004e91a4e906afc17709f2",
     "m_Title": "WaterColor",
     "m_Position": {
-        "x": -3411.0,
+        "x": -3411.000244140625,
         "y": 349.0
     }
 }
@@ -14835,8 +14835,8 @@
     "m_ObjectId": "da0df545235546b098cc4abe9838aa0e",
     "m_Title": "Normals",
     "m_Position": {
-        "x": -4720.0,
-        "y": -3493.999755859375
+        "x": -4720.00048828125,
+        "y": -3494.000244140625
     }
 }
 
@@ -15064,7 +15064,7 @@
     "m_Title": "Vertex Displascement",
     "m_Position": {
         "x": -4183.0,
-        "y": -4765.0
+        "y": -4765.00048828125
     }
 }
 

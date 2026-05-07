@@ -1590,8 +1590,8 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1421.0,
-            "y": -597.0000610351563,
+            "x": -1335.0,
+            "y": -457.0000305175781,
             "width": 208.0,
             "height": 326.0000305175781
         }
@@ -2902,10 +2902,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1551.5302734375,
-            "y": -499.53033447265627,
-            "width": 119.0,
-            "height": 149.0
+            "x": -1563.0,
+            "y": -388.0000305175781,
+            "width": 118.9998779296875,
+            "height": 149.00006103515626
         }
     },
     "m_Slots": [
@@ -3010,7 +3010,7 @@
     "m_NormalDropOffSpace": 0,
     "m_BlendPreserveSpecular": true,
     "m_ReceiveDecals": true,
-    "m_ReceiveSSR": true,
+    "m_ReceiveSSR": false,
     "m_ReceiveSSRTransparent": false,
     "m_SpecularAA": false,
     "m_SpecularOcclusionMode": 1,
@@ -3320,10 +3320,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1641.6036376953125,
-            "y": -514.25146484375,
-            "width": 0.0,
-            "height": 0.0
+            "x": -1684.0,
+            "y": -405.0000305175781,
+            "width": 121.0,
+            "height": 34.000030517578128
         }
     },
     "m_Slots": [
@@ -3460,14 +3460,14 @@
     "m_SGVersion": 0,
     "m_Type": "UnityEditor.Rendering.HighDefinition.ShaderGraph.SystemData",
     "m_ObjectId": "fc19a38210704bed8b5967048f15a4cb",
-    "m_MaterialNeedsUpdateHash": 0,
+    "m_MaterialNeedsUpdateHash": 529,
     "m_SurfaceType": 0,
     "m_RenderingPass": 1,
     "m_BlendMode": 0,
     "m_ZTest": 4,
     "m_ZWrite": false,
     "m_TransparentCullMode": 2,
-    "m_OpaqueCullMode": 2,
+    "m_OpaqueCullMode": 1,
     "m_SortPriority": 0,
     "m_AlphaTest": false,
     "m_ExcludeFromTUAndAA": false,
@@ -3487,7 +3487,7 @@
     "m_TessellationMaxDisplacement": 0.009999999776482582,
     "m_DebugSymbols": false,
     "m_Version": 2,
-    "inspectorFoldoutMask": 0
+    "inspectorFoldoutMask": 9
 }
 
 {

@@ -27,7 +27,7 @@ MonoBehaviour:
     m_Value: {r: 1, g: 0.81340945, b: 0.5518868, a: 1}
   tint:
     m_OverrideState: 1
-    m_Value: {r: 1, g: 1, b: 1, a: 1}
+    m_Value: {r: 1, g: 0.8778405, b: 0.2783019, a: 1}
   maxFogDistance:
     m_OverrideState: 1
     m_Value: 5000
@@ -448,7 +448,7 @@ MonoBehaviour:
     m_Value: 0
   intensity:
     m_OverrideState: 1
-    m_Value: 2.42
+    m_Value: 1.69
   directLightingStrength:
     m_OverrideState: 1
     m_Value: 0.279
