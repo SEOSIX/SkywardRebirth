@@ -95,7 +95,7 @@ Material:
     - _RefractionModel: 0
     - _RenderQueueType: 4
     - _RequireSplitLighting: 0
-    - _SaturationVertex: 1.3
+    - _SaturationVertex: 1.719
     - _SrcBlend: 1
     - _StencilRef: 0
     - _StencilRefDepth: 0
