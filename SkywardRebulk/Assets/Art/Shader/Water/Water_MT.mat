@@ -80,7 +80,7 @@ Material:
     - _FoamFallOff: 1.8
     - _FoamScale: 1.2
     - _FoamSoftness: 0.93
-    - _FoamSpeed: 0.6
+    - _FoamSpeed: 477
     - _FresnelEffect: 0
     - _IntersectionPower: 17.2
     - _MaterialID: 1
@@ -129,7 +129,7 @@ Material:
     - _DissortDir: {r: -0.05, g: -0.05, b: 0, a: 0}
     - _DoubleSidedConstants: {r: 1, g: 1, b: 1, a: 0}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
-    - _FoamColor: {r: 1, g: 0, b: 0, a: 1}
+    - _FoamColor: {r: 1, g: 1, b: 1, a: 1}
     - _FoamDir: {r: 0.27, g: 0.09, b: 0, a: 0}
     - _JSPCQUOI: {r: 0, g: 0, b: 0, a: 0}
     - _ScrollDirection: {r: -0.05, g: -0.05, b: 0, a: 0}

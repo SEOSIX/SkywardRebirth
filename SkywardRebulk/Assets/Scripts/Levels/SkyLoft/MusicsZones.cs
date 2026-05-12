@@ -1,51 +1,75 @@
 using UnityEngine;
+using FMODUnity;
+using FMOD.Studio;
 
 public class MusicsZones : MonoBehaviour
 {
     [SerializeField] private Vector3 BoxSize;
     [SerializeField] private Color _colorBox;
-    [SerializeField] private MusicTrack Track;
     [SerializeField] private float FadeDuration = 2f;
+    [SerializeField] private EventReference MusicEvent;
+    [SerializeField] [Range(0f, 1f)] private float Volume = 1f;
+
+    private EventInstance _musicInstance;
+    private float _currentVolume = 0f;
+    private float _targetVolume = 0f;
+
+    public static MusicsZones ActiveZone;
 
     void Start()
     {
-        BoxCollider col = GetComponent<BoxCollider>();
-        if (col != null)
-            BoxSize = col.size;
-        
-        CheckPlayerInsideOnStart();
+        _musicInstance = RuntimeManager.CreateInstance(MusicEvent);
+        _musicInstance.start();
+        _musicInstance.setVolume(0f);
     }
 
-    void CheckPlayerInsideOnStart()
+    void Update()
     {
-        GameObject player = Player.instance.gameObject;
-        if (player == null) return;
-        Vector3 localPos = transform.InverseTransformPoint(player.transform.position);
-        Vector3 halfSize = BoxSize / 2f;
+        Vector3 localPos = transform.InverseTransformPoint(Player.instance.transform.position);
+        bool isInside = Mathf.Abs(localPos.x) <= BoxSize.x / 2f &&
+                        Mathf.Abs(localPos.y) <= BoxSize.y / 2f &&
+                        Mathf.Abs(localPos.z) <= BoxSize.z / 2f;
 
-        bool isInside = Mathf.Abs(localPos.x) <= halfSize.x &&
-                        Mathf.Abs(localPos.y) <= halfSize.y &&
-                        Mathf.Abs(localPos.z) <= halfSize.z;
-
-        if (isInside)
+        if (isInside && ActiveZone != this)
         {
-            if (MusicZoneManager.Instance == null)
+            bool sameParent = ActiveZone != null && ActiveZone.transform.parent == transform.parent;
+
+            if (sameParent)
             {
-                return;
+                ActiveZone._currentVolume = 0f;
+                ActiveZone._targetVolume  = 0f;
+                ActiveZone._musicInstance.setVolume(0f);
+
+                _currentVolume = 1f;
+                _targetVolume  = 1f;
+                _musicInstance.setVolume(1f);
             }
-            MusicZoneManager.Instance.TransitionTo(Track, 0f);
+            else
+            {
+                if (ActiveZone != null)
+                    ActiveZone._targetVolume = 0f;
+
+                _targetVolume = 1f;
+            }
+
+            ActiveZone = this;
+        }
+        else if (!isInside && ActiveZone == this)
+        {
+            _targetVolume = 0f;
+        }
+
+        if (_currentVolume != _targetVolume)
+        {
+            _currentVolume = Mathf.MoveTowards(_currentVolume, _targetVolume * Volume, Time.deltaTime / FadeDuration);
+            _musicInstance.setVolume(_currentVolume);
         }
     }
 
-    void OnTriggerEnter(Collider other)
+    void OnDestroy()
     {
-        if (!other.CompareTag("Player")) return;
-
-        if (MusicZoneManager.Instance == null)
-        {
-            return;
-        }
-        MusicZoneManager.Instance.TransitionTo(Track, FadeDuration);
+        _musicInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+        _musicInstance.release();
     }
 
     void OnDrawGizmosSelected()
@@ -57,13 +81,5 @@ public class MusicsZones : MonoBehaviour
         Gizmos.color  = _colorBox;
         Gizmos.DrawCube(Vector3.zero, BoxSize);
         Gizmos.matrix = Matrix4x4.identity;
-    }
-
-    void Reset()
-    {
-        BoxCollider col = gameObject.GetComponent<BoxCollider>()
-                       ?? gameObject.AddComponent<BoxCollider>();
-        col.isTrigger = true;
-        col.size      = BoxSize == Vector3.zero ? Vector3.one : BoxSize;
     }
 }
