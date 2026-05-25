@@ -20,10 +20,10 @@ MonoBehaviour:
     jumpForce: 5
     jumpDuration: 0.2
     minSpeedToJump: 4
-    edgeDetectDistance: 0.64
-    groundCheckDistance: 0.3
-    groundCheckRadius: 1.32
-    maxStepDown: 0.56
+    edgeDetectDistance: 0
+    groundCheckDistance: 0.01
+    groundCheckRadius: 0.01
+    maxStepDown: 0.07
     maxFallHeight: 1
     groundLayer:
       serializedVersion: 2

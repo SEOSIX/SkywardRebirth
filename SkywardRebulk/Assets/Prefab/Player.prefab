@@ -1,5 +1,67 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2055608694536422913
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1348946486095972468}
+  m_Layer: 0
+  m_Name: stepRayLower
+  m_TagString: Untagged
+  m_Icon: {fileID: 3306451490063965843, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1348946486095972468
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2055608694536422913}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.24, z: 0.509}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 364497924519231630}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2841367401290923015
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1389938532743905628}
+  m_Layer: 0
+  m_Name: stepRayUper
+  m_TagString: Untagged
+  m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1389938532743905628
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2841367401290923015}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.893, z: 0.58}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 364497924519231630}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3252672075574864571
 GameObject:
   m_ObjectHideFlags: 0
@@ -271,6 +333,7 @@ GameObject:
   - component: {fileID: 5355386370268335155}
   - component: {fileID: 8537123628238330734}
   - component: {fileID: 7368259852046051974}
+  - component: {fileID: 9030773975040661160}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -294,6 +357,8 @@ Transform:
   - {fileID: 3308798628261111249}
   - {fileID: 8502769434059661196}
   - {fileID: 1036099963246155573}
+  - {fileID: 1348946486095972468}
+  - {fileID: 1389938532743905628}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2856689859551632876
@@ -473,7 +538,7 @@ MonoBehaviour:
   cameraMovements: {fileID: 0}
   _data: {fileID: 11400000, guid: df7c78948b54fa54b804aee0450402f1, type: 2}
   meshRenderer: {fileID: 4348391947644198407}
-  groundCheck: {fileID: 1036099963246155573}
+  Collider: {fileID: 6544218006225640575}
 --- !u!114 &5355386370268335155
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -487,6 +552,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerContoller
   _cam: {fileID: 0}
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 8
+  rayDistance: 0.001
+  maxSlopeAngle: 60
 --- !u!54 &8537123628238330734
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -495,9 +565,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9220848067520031352}
   serializedVersion: 5
-  m_Mass: 1
+  m_Mass: 3
   m_LinearDamping: 0
-  m_AngularDamping: 0.05
+  m_AngularDamping: 0
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -513,7 +583,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 1
   m_Constraints: 80
-  m_CollisionDetection: 2
+  m_CollisionDetection: 1
 --- !u!114 &7368259852046051974
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -526,3 +596,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 802d98a376a92db458ca5e2c90bc625f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerJump
+--- !u!114 &9030773975040661160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9220848067520031352}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf13be0d01a24a11a1875bb7f8a78a56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Entiti.PlayerPhysic
+  snapForce: 50
+  groundCheckDistance: 1.1
+  maxSlopeAngle: 45
+  forwardCheckDistance: 0.5
+  collisionLayer:
+    serializedVersion: 2
+    m_Bits: 8

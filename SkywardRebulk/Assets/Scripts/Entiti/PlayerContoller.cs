@@ -10,6 +10,11 @@ public class PlayerContoller : MonoBehaviour
     public bool IsMoving => _moveInput.sqrMagnitude > 0.01f;
     private Vector2 _moveInput;
     private Vector3 _lastDirection;
+    
+    [Header("Ground Snapping")]
+    [SerializeField] private LayerMask groundLayer;
+    [SerializeField] private float rayDistance = 1.1f;
+    [SerializeField] private float maxSlopeAngle = 45f;
 
     #endregion
     
@@ -17,6 +22,7 @@ public class PlayerContoller : MonoBehaviour
     private void FixedUpdate()
     {
         Move();
+        
     }
 
     #region Inputs
@@ -49,10 +55,8 @@ public class PlayerContoller : MonoBehaviour
 
     #endregion
     
-
     #region MOVEMENTS
-
-    
+  
     private void Move()
     {
         Vector2 input = Vector2.ClampMagnitude(_moveInput, 1f);
@@ -69,11 +73,12 @@ public class PlayerContoller : MonoBehaviour
             _lastDirection = direction;
 
         Vector3 targetVelocity = direction * Player.instance._data.controllerData.walkSpeed;
-        targetVelocity.y = Player.instance.rigidbody.linearVelocity.y;
-        Vector3 velocityDiff = targetVelocity - Player.instance.rigidbody.linearVelocity;
-        velocityDiff.y = 0f;
-        Player.instance.rigidbody.AddForce(velocityDiff, ForceMode.VelocityChange);
+        
+        targetVelocity.y = Player.instance.rigidbody.linearVelocity.y; 
 
+        Vector3 velocityDiff = targetVelocity - Player.instance.rigidbody.linearVelocity;
+        Player.instance.rigidbody.AddForce(velocityDiff, ForceMode.VelocityChange);
+        
         if (_lastDirection.sqrMagnitude > 0.01f)
         {
             Quaternion targetRotation = Quaternion.Euler(
@@ -88,6 +93,5 @@ public class PlayerContoller : MonoBehaviour
                 Player.instance._data.controllerData.rotationSpeed * Time.fixedDeltaTime));
         }
     }
-
     #endregion
 }

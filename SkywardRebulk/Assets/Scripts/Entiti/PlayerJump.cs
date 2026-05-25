@@ -15,24 +15,6 @@ public class PlayerJump : MonoBehaviour
 
     private void FixedUpdate()
     {
-        _isGrounded = CheckGrounded();
-        _groundFront =  GroundInFront();
-        Debug.Log($"grounded{_isGrounded} + ground in front {_groundFront}");
-        AutoJump();
-    }
-
-    private bool CheckGrounded()
-    {
-        var data = Player.instance._data.controllerData;
-        float offset = 0.01f;
-
-        Vector3 origin = transform.position - Vector3.up * (_playerHalfHeight - offset);
-        float maxDistance = data.groundCheckDistance + offset;
-        
-        bool isGrounded = !Physics.Raycast(origin, Vector3.down, maxDistance, data.groundLayer);
-        if (isGrounded)
-            _hasJumped = false;
-        return isGrounded;
     }
 
     private bool GroundInFront()

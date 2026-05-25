@@ -308,6 +308,9 @@
         },
         {
             "m_Id": "f0e37b2d8ef44d23805867c89e68966b"
+        },
+        {
+            "m_Id": "703d10aa12354fec9429a97f241438dd"
         }
     ],
     "m_GroupDatas": [
@@ -679,20 +682,6 @@
         {
             "m_OutputSlot": {
                 "m_Node": {
-                    "m_Id": "4baba8b760154389a6cb93f8182ce66b"
-                },
-                "m_SlotId": 1
-            },
-            "m_InputSlot": {
-                "m_Node": {
-                    "m_Id": "f79edeb5c16248d4b8dfc4e137f81679"
-                },
-                "m_SlotId": 0
-            }
-        },
-        {
-            "m_OutputSlot": {
-                "m_Node": {
                     "m_Id": "508c8b8a8b44443fa71396df184ae5f5"
                 },
                 "m_SlotId": 0
@@ -798,6 +787,20 @@
             "m_InputSlot": {
                 "m_Node": {
                     "m_Id": "b1b50015897e4069b5f19d48e2fa98cb"
+                },
+                "m_SlotId": 0
+            }
+        },
+        {
+            "m_OutputSlot": {
+                "m_Node": {
+                    "m_Id": "703d10aa12354fec9429a97f241438dd"
+                },
+                "m_SlotId": 1
+            },
+            "m_InputSlot": {
+                "m_Node": {
+                    "m_Id": "f79edeb5c16248d4b8dfc4e137f81679"
                 },
                 "m_SlotId": 0
             }
@@ -1185,7 +1188,7 @@
                 "m_Node": {
                     "m_Id": "e6bd603d55354c72a396c88c592ee2c0"
                 },
-                "m_SlotId": 4
+                "m_SlotId": 0
             },
             "m_InputSlot": {
                 "m_Node": {
@@ -3945,6 +3948,22 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
+    "m_ObjectId": "41210614f7af40359792295c99bc07dd",
+    "m_Id": 622522943,
+    "m_DisplayName": "Distance",
+    "m_SlotType": 0,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "_Distance",
+    "m_StageCapability": 2,
+    "m_Value": 1.0,
+    "m_DefaultValue": 0.0,
+    "m_Labels": [],
+    "m_LiteralMode": false
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.BlockNode",
     "m_ObjectId": "41d54f4deec24786b0e6df4a20d004bd",
     "m_Group": {
@@ -4293,8 +4312,8 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -2030.0,
-            "y": 912.0001220703125,
+            "x": -1862.0001220703125,
+            "y": 823.0000610351563,
             "width": 145.0,
             "height": 111.0
         }
@@ -4829,10 +4848,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1347.999755859375,
-            "y": 1649.000244140625,
+            "x": -1375.0001220703125,
+            "y": 1649.0001220703125,
             "width": 208.0,
-            "height": 359.9998779296875
+            "height": 360.0
         }
     },
     "m_Slots": [
@@ -5382,6 +5401,51 @@
         "e32": 0.0,
         "e33": 1.0
     }
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.SubGraphNode",
+    "m_ObjectId": "703d10aa12354fec9429a97f241438dd",
+    "m_Group": {
+        "m_Id": "c52f005353814d82bc41fed91f916b1e"
+    },
+    "m_Name": "Depth Fade",
+    "m_DrawState": {
+        "m_Expanded": true,
+        "m_Position": {
+            "serializedVersion": "2",
+            "x": -2283.000244140625,
+            "y": 912.0000610351563,
+            "width": 208.0,
+            "height": 279.00006103515627
+        }
+    },
+    "m_Slots": [
+        {
+            "m_Id": "41210614f7af40359792295c99bc07dd"
+        },
+        {
+            "m_Id": "bd08b682671e478a9ea7f91ab652617e"
+        }
+    ],
+    "synonyms": [],
+    "m_Precision": 0,
+    "m_PreviewExpanded": true,
+    "m_DismissedVersion": 0,
+    "m_PreviewMode": 0,
+    "m_CustomColors": {
+        "m_SerializableColors": []
+    },
+    "m_SerializedSubGraph": "{\n    \"subGraph\": {\n        \"fileID\": -5475051401550479605,\n        \"guid\": \"6b40987fa69cc474aaa6982c04203ebd\",\n        \"type\": 3\n    }\n}",
+    "m_PropertyGuids": [
+        "211ae815-29ac-4619-b70e-e560313dfc22"
+    ],
+    "m_PropertyIds": [
+        622522943
+    ],
+    "m_Dropdowns": [],
+    "m_DropdownSelectedEntries": []
 }
 
 {
@@ -8253,6 +8317,22 @@
 {
     "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
+    "m_ObjectId": "bd08b682671e478a9ea7f91ab652617e",
+    "m_Id": 1,
+    "m_DisplayName": "Output",
+    "m_SlotType": 1,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "Output",
+    "m_StageCapability": 2,
+    "m_Value": 0.0,
+    "m_DefaultValue": 0.0,
+    "m_Labels": [],
+    "m_LiteralMode": false
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
     "m_ObjectId": "bd615f85235044038546488d796f2335",
     "m_Id": 1,
     "m_DisplayName": "Sine Time",
@@ -8358,9 +8438,9 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1111.0,
-            "y": 1589.9998779296875,
-            "width": 126.00006103515625,
+            "x": -1127.0001220703125,
+            "y": 1590.0001220703125,
+            "width": 126.0,
             "height": 118.0
         }
     },
@@ -8584,8 +8664,8 @@
     "m_ObjectId": "c52f005353814d82bc41fed91f916b1e",
     "m_Title": "FoamEffect",
     "m_Position": {
-        "x": -2402.999755859375,
-        "y": 853.0
+        "x": -2403.0,
+        "y": 764.0
     }
 }
 
@@ -8966,8 +9046,8 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1522.0,
-            "y": 2045.0001220703125,
+            "x": -1560.0,
+            "y": 2025.9998779296875,
             "width": 132.0,
             "height": 34.0001220703125
         }

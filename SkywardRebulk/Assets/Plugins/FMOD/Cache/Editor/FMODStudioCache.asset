@@ -15,10 +15,10 @@ MonoBehaviour:
   Path: ../../../SoundsFmod/SkywardRebulkFMod/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639141880701356158
+  lastModified: 639141918176832061
   FileSizes:
   - Name: Desktop
-    Value: 872
+    Value: 910
   Exists: 1
 --- !u!114 &-3690406887617991692
 MonoBehaviour:
@@ -93,18 +93,23 @@ MonoBehaviour:
   - {fileID: 4495686752453627233}
   - {fileID: -3690406887617991692}
   - {fileID: -2765807684244266740}
+  - {fileID: 1984646338118460484}
   EditorParameters: []
   MasterBanks:
   - {fileID: 1953505631530654077}
   StringsBanks:
   - {fileID: -3868390910662842854}
   cacheVersion: 131859
-  cacheTime: 639141880701356158
+  cacheTime: 639141918176832061
   SerializableEventsDict:
   - key: event:/Zone1Event
     index: 0
   - key: event:/Zone2Event
     index: 1
+  - key: event:/WindSound
+    index: 2
+  - key: event:/Zone3Event
+    index: 3
 --- !u!114 &1953505631530654077
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -120,11 +125,38 @@ MonoBehaviour:
   Path: ../../../SoundsFmod/SkywardRebulkFMod/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639141880701340909
+  lastModified: 639141918176816599
   FileSizes:
   - Name: Desktop
-    Value: 2684672
+    Value: 5156288
   Exists: 1
+--- !u!114 &1984646338118460484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Zone3Event
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Zone3Event
+  Guid:
+    Data1: -1175810481
+    Data2: 1124137466
+    Data3: 396428679
+    Data4: -1426035728
+  Banks:
+  - {fileID: 1953505631530654077}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 171500
 --- !u!114 &4495686752453627233
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -9,20 +9,30 @@ public class CameraMovements : MonoBehaviour
     [Header("Snap")]
     public float snapSpeed = 8f;
     private bool _isSnapping = false;
+    
     [Header("Distance")]
     public float distance = 5f;
     public float height = 2f;
-    [Header("Smooth")]
+    
+    [Header("Smooth & Align")]
     [Range(1f, 20f)]
     public float positionSmooth = 5f;
     [Range(0.1f, 5f)]
     public float rotationSmooth = 1f;
+    [Range(0f, 180f)]
+    public float maxAlignAngle = 110f;
+
     [Header("Free Cam")]
     public float lookSensitivity = 3f;
     [Range(-80f, 0f)]
     public float minPitch = -30f;
     [Range(0f, 80f)]
     public float maxPitch = 60f;
+
+    [Header("Collisions")]
+    public LayerMask collisionLayers;
+    public float cameraRadius = 0.3f;
+    public float minDistance = 0.5f;
 
     private bool _isFreeCam = false;
     private float _currentPitch = 0f;
@@ -63,22 +73,37 @@ public class CameraMovements : MonoBehaviour
             }
             else if (Player.instance.playerContoller.IsMoving)
             {
-                _currentYaw = Mathf.LerpAngle(_currentYaw, targetYaw, rotationSmooth * Time.deltaTime);
+                float angleDifference = Mathf.Abs(Mathf.DeltaAngle(_currentYaw, targetYaw));
+
+                if (angleDifference <= maxAlignAngle)
+                {
+                    _currentYaw = Mathf.LerpAngle(_currentYaw, targetYaw, rotationSmooth * Time.deltaTime);
+                }
             }
         }
-
         Quaternion camRotation = Quaternion.Euler(_currentPitch, _currentYaw, 0f);
         Vector3 offset = camRotation * new Vector3(0f, height, -distance);
-        Vector3 targetPosition = target.position + offset;
+        Vector3 desiredPosition = target.position + offset;
+        
+        Vector3 lookAtPoint = target.position + Vector3.up * height * 0.5f;
 
+        Vector3 directionToCamera = (desiredPosition - lookAtPoint).normalized;
+        float desiredDistance = Vector3.Distance(lookAtPoint, desiredPosition);
+        Vector3 finalPosition = desiredPosition;
+
+        if (Physics.SphereCast(lookAtPoint, cameraRadius, directionToCamera, out RaycastHit hit, desiredDistance, collisionLayers))
+        {
+            float clampedDistance = Mathf.Clamp(hit.distance, minDistance, desiredDistance);
+            finalPosition = lookAtPoint + directionToCamera * clampedDistance;
+        }
         transform.position = Vector3.SmoothDamp(
             transform.position,
-            targetPosition,
+            finalPosition,
             ref _currentVelocity,
             1f / positionSmooth
         );
 
-        transform.LookAt(target.position + Vector3.up * height * 0.5f);
+        transform.LookAt(lookAtPoint);
     }
     
     public void OnFreeCam(InputAction.CallbackContext context)
