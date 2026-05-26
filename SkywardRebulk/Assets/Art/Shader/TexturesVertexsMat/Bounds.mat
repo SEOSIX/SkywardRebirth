@@ -23,7 +23,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Rock2Borders
+  m_Name: Bounds
   m_Shader: {fileID: -6465566751694194690, guid: f08b786c63ef32845888b1e5f82298b5, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -50,7 +50,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 61d6da63e164a5c489295d22e3b00f4e, type: 3}
+        m_Texture: {fileID: 2800000, guid: 4edbb84ce0734bf40bf415bb760910b2, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
@@ -76,7 +76,7 @@ Material:
     - _CullMode: 2
     - _CullModeForward: 2
     - _DepthOffsetEnable: 0
-    - _DissolveEnd: 5.45
+    - _DissolveEnd: 0
     - _DoubleSidedEnable: 0
     - _DoubleSidedGIMode: 0
     - _DoubleSidedNormalMode: 2
@@ -95,7 +95,7 @@ Material:
     - _RefractionModel: 0
     - _RenderQueueType: 4
     - _RequireSplitLighting: 0
-    - _SaturationVertex: 1.719
+    - _SaturationVertex: 1
     - _SrcBlend: 1
     - _StencilRef: 0
     - _StencilRefDepth: 0
@@ -123,10 +123,11 @@ Material:
     - _ZTestGBuffer: 4
     - _ZTestTransparent: 4
     - _ZWrite: 0
+    - _dfsfdsf: 1
     m_Colors:
-    - _AlphaSize: {r: 1, g: 1, b: 0, a: 0}
+    - _AlphaSize: {r: 0, g: 0, b: 0, a: 0}
     - _AlphaSmooth: {r: 0, g: 0, b: 0, a: 0}
-    - _Dissolve: {r: -0.46, g: 0.26, b: 0, a: 0}
+    - _Dissolve: {r: 0, g: 0, b: 0, a: 0}
     - _DoubleSidedConstants: {r: 1, g: 1, b: -1, a: 0}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []

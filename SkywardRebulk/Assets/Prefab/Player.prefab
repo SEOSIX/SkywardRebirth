@@ -612,6 +612,9 @@ MonoBehaviour:
   groundCheckDistance: 1.1
   maxSlopeAngle: 45
   forwardCheckDistance: 0.5
+  maxStepHeight: 0.5
+  stepSmooth: 5
+  feetOffset: 0.64
   collisionLayer:
     serializedVersion: 2
     m_Bits: 8
