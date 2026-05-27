@@ -17,6 +17,10 @@ public class CameraMovements : MonoBehaviour
     [Header("Smooth & Align")]
     [Range(1f, 20f)]
     public float positionSmooth = 5f;
+    
+    [Range(1f, 30f)]
+    public float verticalSmooth = 5f;
+    
     [Range(0.1f, 5f)]
     public float rotationSmooth = 1f;
     [Range(0f, 180f)]
@@ -96,12 +100,14 @@ public class CameraMovements : MonoBehaviour
             float clampedDistance = Mathf.Clamp(hit.distance, minDistance, desiredDistance);
             finalPosition = lookAtPoint + directionToCamera * clampedDistance;
         }
-        transform.position = Vector3.SmoothDamp(
-            transform.position,
-            finalPosition,
-            ref _currentVelocity,
-            1f / positionSmooth
-        );
+        
+        Vector3 currentPos = transform.position;
+        
+        float newX = Mathf.SmoothDamp(currentPos.x, finalPosition.x, ref _currentVelocity.x,1f/ positionSmooth);
+        float newZ = Mathf.SmoothDamp(currentPos.z, finalPosition.z, ref _currentVelocity.z,1f/ positionSmooth);
+        float newY = Mathf.SmoothDamp(currentPos.y, finalPosition.y, ref _currentVelocity.y,1f/ verticalSmooth);
+        
+        transform.position = new Vector3(newX, newY, newZ);
 
         transform.LookAt(lookAtPoint);
     }

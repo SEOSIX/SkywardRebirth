@@ -19,6 +19,8 @@ namespace Entiti
         [SerializeField] private float stepCheckDistance = 0.5f;
         [SerializeField] private float maxStepHeight = 0.5f;
         [SerializeField] private float smoothingTp = 5f;
+        [SerializeField] private float angleLeftCheck = -45;
+        [SerializeField] private float angleRightCheck = 45;
         
         [Header("Calques (Layers)")]
         [SerializeField] private LayerMask collisionLayer;
@@ -30,27 +32,23 @@ namespace Entiti
         {
             if (Player.instance == null || Player.instance.rigidbody == null) return;
             Rigidbody rb = Player.instance.rigidbody;
-
-            // --- CORRECTION 1 : Si on grimpe, on gère UNIQUEMENT le Lerp et on stoppe le reste ---
+            
             if (isLerping)
             {
-                // On déplace le Rigidbody de manière fluide (mieux que transform.position)
+                //On déplace le Rigidbody de manière fluide (mieux que transform.position)
                 rb.position = Vector3.Lerp(rb.position, targetPosition, Time.fixedDeltaTime * smoothingTp);
             
-                // Fin du déplacement
+                //Fin du déplacement
                 if (Vector3.Distance(rb.position, targetPosition) < 0.05f)
                 {
-                    rb.position = targetPosition; // Snap final parfait
-                    rb.isKinematic = false;       // On réactive la physique !
+                    rb.position = targetPosition;
+                    rb.isKinematic = false;
                     isLerping = false;
                 }
-                return; // IMPORTANT : On quitte la fonction ici pour ne pas appliquer la gravité/pentes
+                return;
             }
-
-            // Physique normale (seulement si on ne grimpe pas)
             HandleGravityAndSlopes(rb);
             
-            // On ne cherche une marche que si le joueur avance
             if (rb.linearVelocity.magnitude > 0.1f)
             {
                 HandleStep(rb);
@@ -104,29 +102,46 @@ namespace Entiti
         {
             Vector3 lowerOrigin = transform.position + transform.up * 0.05f;
             RaycastHit hitLower;
-            bool lowerHit = Physics.Raycast(lowerOrigin, transform.forward, out hitLower, stepCheckDistance, collisionLayer);
-        
+            
             Vector3 upperOrigin = transform.position + transform.up * maxStepHeight;
             RaycastHit hitUpper;
-            bool upperHit = Physics.Raycast(upperOrigin, transform.forward, out hitUpper, stepCheckDistance, collisionLayer);
             
-            if (lowerHit && !upperHit)
+            Vector3 angleStepLeft = Quaternion.Euler(0, angleLeftCheck, 0) * transform.forward;
+            Vector3 angleStepRight = Quaternion.Euler(0, angleRightCheck, 0) * transform.forward;
+            
+            
+            
+            Vector3[] directionToTest = {transform.forward, angleStepLeft, angleStepRight};
+
+            foreach (Vector3 dir in directionToTest)
             {
-                // --- CORRECTION 2 : Placer l'origine du rayon du haut BIEN AU-DESSUS de la marche ---
-                // On prend la position XZ de l'impact, on avance un poil, et on force la hauteur Y au-dessus de la hauteur max
-                Vector3 downRayOrigin = hitLower.point + (transform.forward * 0.1f);
-                downRayOrigin.y = transform.position.y + maxStepHeight + 0.1f; 
-
-                RaycastHit hitDownward;
-
-                // On tire vers le bas
-                if (Physics.Raycast(downRayOrigin, Vector3.down, out hitDownward, maxStepHeight + 0.2f, collisionLayer))
+                bool lowerHit = Physics.Raycast(lowerOrigin, dir, out hitLower, stepCheckDistance, collisionLayer);
+                bool upperHit = Physics.Raycast(upperOrigin, dir, out hitUpper, stepCheckDistance, collisionLayer);
+                if (lowerHit)
                 {
-                    targetPosition = hitDownward.point; 
-                    
-                    // --- CORRECTION 3 : On coupe la physique pour éviter les conflits pendant le Lerp ---
-                    rb.isKinematic = true; 
-                    isLerping = true; 
+                    float surfaceAngle = Vector3.Angle(Vector3.up, hitLower.normal);
+                    if (surfaceAngle > 0f && surfaceAngle <= maxSlopeAngle)
+                    {
+                        continue;
+                    }
+                }
+                
+                if (lowerHit && !upperHit)
+                {
+                    Vector3 downRayOrigin = hitLower.point + (transform.forward * 0.1f);
+                    downRayOrigin.y = transform.position.y + maxStepHeight + 0.1f; 
+
+                    RaycastHit hitDownward;
+                
+                    if (Physics.Raycast(downRayOrigin, Vector3.down, out hitDownward, maxStepHeight + 0.2f, collisionLayer))
+                    {
+                        targetPosition = hitDownward.point; 
+            
+                        rb.isKinematic = true; 
+                        isLerping = true; 
+                        
+                        break;
+                    }
                 }
             }
         }

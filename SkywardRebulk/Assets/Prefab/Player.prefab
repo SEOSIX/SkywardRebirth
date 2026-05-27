@@ -582,7 +582,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 1
-  m_Constraints: 80
+  m_Constraints: 112
   m_CollisionDetection: 1
 --- !u!114 &7368259852046051974
 MonoBehaviour:
@@ -612,9 +612,11 @@ MonoBehaviour:
   groundCheckDistance: 1.1
   maxSlopeAngle: 45
   forwardCheckDistance: 0.5
+  stepCheckDistance: 0.685
   maxStepHeight: 0.5
-  stepSmooth: 5
-  feetOffset: 0.64
+  smoothingTp: 24
+  angleLeftCheck: -45
+  angleRightCheck: 45
   collisionLayer:
     serializedVersion: 2
     m_Bits: 8

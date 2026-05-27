@@ -81,6 +81,11 @@ public class MusicsZones : MonoBehaviour
             _currentVolume = Mathf.MoveTowards(_currentVolume, finalTargetVolume, Time.deltaTime / FadeDuration);
             _musicInstance.setVolume(_currentVolume);
         }
+
+        if (ActiveZone == this && _currentVolume == 0f && _targetVolume == 0f)
+        {
+            ActiveZone = null;
+        }
     }
 
     void OnDestroy()

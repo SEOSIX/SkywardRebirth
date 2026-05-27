@@ -1015,7 +1015,7 @@
     "m_Title": "Texture",
     "m_Position": {
         "x": -2280.0,
-        "y": -713.0
+        "y": -712.9999389648438
     }
 }
 
@@ -2987,7 +2987,7 @@
     "m_Title": "Distortion",
     "m_Position": {
         "x": -2223.0,
-        "y": 2434.0
+        "y": 2433.999755859375
     }
 }
 
@@ -3022,7 +3022,7 @@
     "m_Hidden": false,
     "m_ShaderOutputName": "Occlusion",
     "m_StageCapability": 2,
-    "m_Value": 0.4000000059604645,
+    "m_Value": 0.0,
     "m_DefaultValue": 1.0,
     "m_Labels": [],
     "m_LiteralMode": false
