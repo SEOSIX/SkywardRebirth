@@ -234,6 +234,7 @@ MonoBehaviour:
   - {fileID: 3327527827526197064}
   - {fileID: 1364009292686933321}
   - {fileID: -853586555900776008}
+  - {fileID: 8088266465627318471}
 --- !u!114 &1364009292686933321
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -615,3 +616,63 @@ MonoBehaviour:
   m_ObsoleteScrollSpeed:
     m_OverrideState: 0
     m_Value: 1
+--- !u!114 &8088266465627318471
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21b33ff882915ef42a6a5b857ce97af2, type: 3}
+  m_Name: SkywardDoFVolume
+  m_EditorClassIdentifier: Assembly-CSharp::SkywardDoFVolume
+  active: 1
+  focusDistance:
+    m_OverrideState: 1
+    m_Value: 9.3
+  focusRange:
+    m_OverrideState: 1
+    m_Value: 90
+  maxBlurRadius:
+    m_OverrideState: 1
+    m_Value: 2.7
+  distortionIntensity:
+    m_OverrideState: 1
+    m_Value: 0
+  paperScale:
+    m_OverrideState: 1
+    m_Value: 752.8
+  washColor:
+    m_OverrideState: 1
+    m_Value: {r: 1, g: 0.8763654, b: 0.6084906, a: 1}
+  washAlpha:
+    m_OverrideState: 1
+    m_Value: 0.037
+  dofTintColor:
+    m_OverrideState: 1
+    m_Value: {r: 1, g: 0.9229824, b: 0.6839622, a: 1}
+  dofTintIntensity:
+    m_OverrideState: 1
+    m_Value: 0.55
+  cloudColor:
+    m_OverrideState: 1
+    m_Value: {r: 1, g: 0.8752062, b: 0.5330188, a: 1}
+  cloudIntensity:
+    m_OverrideState: 1
+    m_Value: 0
+  cloudSpeed:
+    m_OverrideState: 1
+    m_Value: 0.08
+  cloudScale:
+    m_OverrideState: 1
+    m_Value: 1.64
+  noiseTexture:
+    m_OverrideState: 1
+    m_Value: {fileID: 2800000, guid: 8f9d95f139f50574296335f33d0df69a, type: 3}
+    dimension: 1
+  cloudTexture:
+    m_OverrideState: 1
+    m_Value: {fileID: 2800000, guid: bf6664c15cc12d44ca58cacc3231565c, type: 3}
+    dimension: 1

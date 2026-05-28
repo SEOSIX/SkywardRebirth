@@ -68,6 +68,7 @@ Material:
     m_Ints: []
     m_Floats:
     - _AddPrecomputedVelocity: 0
+    - _Alpha: 1.38
     - _AlphaCutoffEnable: 0
     - _AlphaDstBlend: 10
     - _AlphaSrcBlend: 1
@@ -123,7 +124,7 @@ Material:
     - _ZTestGBuffer: 4
     - _ZTestTransparent: 4
     - _ZWrite: 0
-    - _dfsfdsf: 10
+    - _dfsfdsf: 1
     m_Colors:
     - _AlphaSize: {r: 0, g: 0, b: 0, a: 0}
     - _AlphaSmooth: {r: 0, g: 0, b: 0, a: 0}

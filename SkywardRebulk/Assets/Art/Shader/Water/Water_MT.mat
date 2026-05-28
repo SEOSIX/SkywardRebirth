@@ -12,15 +12,14 @@ Material:
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
+  - _DISABLE_SSR_TRANSPARENT
   - _ENABLE_FOG_ON_TRANSPARENT
   - _SURFACE_TYPE_TRANSPARENT
-  - _TRANSPARENT_REFRACTIVE_SORT
-  m_InvalidKeywords:
-  - _DISABLE_SSR_TRANSPARENT
+  m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: 2750
+  m_CustomRenderQueue: 3000
   stringTagMap:
     MotionVector: User
     RenderType: Transparent
@@ -34,6 +33,10 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - _HighLightText:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _MainTex:
         m_Texture: {fileID: 2800000, guid: 22f80fc80a5cb09498be232237db285d, type: 3}
         m_Scale: {x: 1, y: 1}
@@ -58,9 +61,9 @@ Material:
     m_Floats:
     - _AddPrecomputedVelocity: 0
     - _AlphaCutoffEnable: 0
-    - _AlphaDstBlend: 1
+    - _AlphaDstBlend: 10
     - _AlphaSrcBlend: 1
-    - _BlendMode: 1
+    - _BlendMode: 0
     - _ConservativeDepthOffsetEnable: 0
     - _CullMode: 2
     - _CullModeForward: 2
@@ -70,24 +73,24 @@ Material:
     - _DoubleSidedEnable: 0
     - _DoubleSidedGIMode: 0
     - _DoubleSidedNormalMode: 2
-    - _DstBlend: 1
+    - _DstBlend: 10
     - _DstBlend2: 10
     - _EnableBlendModePreserveSpecularLighting: 1
     - _EnableFogOnTransparent: 1
     - _ExcludeFromTUAndAA: 0
-    - _FoamAmount: 10.9
-    - _FoamCuttOff: 158
-    - _FoamFallOff: 1.8
-    - _FoamScale: 1.2
-    - _FoamSoftness: 0.93
-    - _FoamSpeed: 477
+    - _FoamAmount: 0
+    - _FoamCuttOff: 0
+    - _FoamFallOff: 0
+    - _FoamScale: 0
+    - _FoamSoftness: 0
+    - _FoamSpeed: 0
     - _FresnelEffect: 0
     - _IntersectionPower: 17.2
     - _MaterialID: 1
     - _MaterialTypeMask: 2
     - _NormalStrength: 2.6
     - _OcclusionStrength: 0
-    - _Opacity: 0.01
+    - _Opacity: 0
     - _OpaqueCullMode: 2
     - _PerPixelSorting: 1
     - _RayTracing: 0
@@ -95,19 +98,19 @@ Material:
     - _ReceivesSSRTransparent: 0
     - _RefractionModel: 0
     - _RegulationSpeedFoam: 6
-    - _RenderQueueType: 3
+    - _RenderQueueType: 4
     - _RequireSplitLighting: 0
     - _SrcBlend: 1
     - _StencilRef: 0
-    - _StencilRefDepth: 1
+    - _StencilRefDepth: 0
     - _StencilRefDistortionVec: 4
     - _StencilRefGBuffer: 2
-    - _StencilRefMV: 33
+    - _StencilRefMV: 32
     - _StencilWriteMask: 6
     - _StencilWriteMaskDepth: 9
     - _StencilWriteMaskDistortionVec: 4
     - _StencilWriteMaskGBuffer: 15
-    - _StencilWriteMaskMV: 43
+    - _StencilWriteMaskMV: 41
     - _SupportDecals: 1
     - _SurfaceType: 1
     - _TransmissionEnable: 1
