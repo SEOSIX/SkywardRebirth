@@ -100,14 +100,22 @@ namespace Entiti
 
         void HandleStep(Rigidbody rb)
         {
+            Vector3 moveDir = Player.instance.rigidbody.linearVelocity;
+
+            if (moveDir.magnitude < 0.01f)
+            {
+                moveDir = transform.forward;
+            }
+            moveDir.Normalize();
+            
             Vector3 lowerOrigin = transform.position + transform.up * 0.05f;
             RaycastHit hitLower;
             
             Vector3 upperOrigin = transform.position + transform.up * maxStepHeight;
             RaycastHit hitUpper;
             
-            Vector3 angleStepLeft = Quaternion.Euler(0, angleLeftCheck, 0) * transform.forward;
-            Vector3 angleStepRight = Quaternion.Euler(0, angleRightCheck, 0) * transform.forward;
+            Vector3 angleStepLeft = Quaternion.Euler(0, angleLeftCheck, 0) * moveDir;
+            Vector3 angleStepRight = Quaternion.Euler(0, angleRightCheck, 0) * moveDir;
             
             
             
@@ -128,7 +136,7 @@ namespace Entiti
                 
                 if (lowerHit && !upperHit)
                 {
-                    Vector3 downRayOrigin = hitLower.point + (transform.forward * 0.1f);
+                    Vector3 downRayOrigin = hitLower.point + (dir * 0.1f);
                     downRayOrigin.y = transform.position.y + maxStepHeight + 0.1f; 
 
                     RaycastHit hitDownward;

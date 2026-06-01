@@ -628,16 +628,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21b33ff882915ef42a6a5b857ce97af2, type: 3}
   m_Name: SkywardDoFVolume
   m_EditorClassIdentifier: Assembly-CSharp::SkywardDoFVolume
-  active: 1
+  active: 0
   focusDistance:
     m_OverrideState: 1
-    m_Value: 9.3
+    m_Value: 33.4
   focusRange:
     m_OverrideState: 1
     m_Value: 90
   maxBlurRadius:
     m_OverrideState: 1
-    m_Value: 2.7
+    m_Value: 1.9
   distortionIntensity:
     m_OverrideState: 1
     m_Value: 0

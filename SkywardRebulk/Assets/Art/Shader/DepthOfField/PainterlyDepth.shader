@@ -65,24 +65,21 @@ Shader "Hidden/PostProcess/SkywardDoF_V6"
         float depth = LoadCameraDepth(uv * _ScreenSize.xy);
         float linearDepth = LinearEyeDepth(depth, _ZBufferParams);
 
-        // 1. Calcul du masque DoF doux
         float dofFactor = smoothstep(_FocusDistance, _FocusDistance + _FocusRange, linearDepth);
-
-        // Optimisation
+        
         if (dofFactor <= 0.001)
             return originalColor;
 
-        // 2. Bruit de papier
         float2 paperUV = uv * _PaperScale;
         float paperNoise = SAMPLE_TEXTURE2D(_NoiseTex, sampler_NoiseTex, paperUV).r;
 
-        // 3. Nuages
+        //cloud effect
         float2 animatedCloudUV = uv * _CloudScale;
         animatedCloudUV += float2(_Time.y, _Time.y) * _CloudSpeed + (paperNoise - 0.5) * 0.02;
         float cloudSample = SAMPLE_TEXTURE2D(_CloudTex, sampler_CloudTex, animatedCloudUV).r;
         float cloudFinalAlpha = cloudSample * _CloudIntensity * dofFactor;
 
-        // 4. Convolution (Flou aquarelle)
+        //applying texture
         float3 stylizedColor = float3(0, 0, 0);
         float totalWeight = 0.0;
         
@@ -102,16 +99,15 @@ Shader "Hidden/PostProcess/SkywardDoF_V6"
         }
         stylizedColor /= totalWeight;
 
-        // 5. Application de la Teinte (Optionnelle, V5)
+        
+        //coo=lor tint
         float3 tintedWash = stylizedColor * _DoFTintColor;
         stylizedColor = lerp(stylizedColor, tintedWash, _DoFTintIntensity * dofFactor);
-
-        // Application du Distance Wash (Brouillard de couleur nette)
-        // C'est ici que l'arrière-plan moyen se transforme en une couleur unie
+        
         float3 colorWithWash = lerp(stylizedColor, _WashColor, _WashAlpha * dofFactor);
 
-        // 7. Mélange final avec les Nuages et le premier plan
-        // Les nuages dérivent *au-dessus* de cette couleur unie
+        
+        //volor layering
         float3 colorWithClouds = lerp(colorWithWash, _CloudColor, cloudFinalAlpha);
         
         return lerp(originalColor, float4(colorWithClouds, 1.0), dofFactor);
