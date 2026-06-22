@@ -18,17 +18,14 @@ Shader "Hidden/PostProcess/SkywardDoF_V6"
     float _DistortionIntensity; 
     float _PaperScale;     
     
-    // Nuages
     float3 _CloudColor;
     float _CloudIntensity;
     float _CloudSpeed;
     float _CloudScale;
 
-    // Teinte (Optionnelle)
     float3 _DoFTintColor;
     float _DoFTintIntensity;
 
-    // NOUVEAU V6 : Distance Wash (Couleur nette du fond)
     float3 _WashColor;
     float _WashAlpha;
 

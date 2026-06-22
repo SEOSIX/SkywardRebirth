@@ -35,10 +35,8 @@ namespace Entiti
             
             if (isLerping)
             {
-                //On déplace le Rigidbody de manière fluide (mieux que transform.position)
                 rb.position = Vector3.Lerp(rb.position, targetPosition, Time.fixedDeltaTime * smoothingTp);
             
-                //Fin du déplacement
                 if (Vector3.Distance(rb.position, targetPosition) < 0.05f)
                 {
                     rb.position = targetPosition;

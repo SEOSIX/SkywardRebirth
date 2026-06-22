@@ -19,7 +19,7 @@ Material:
   m_LightmapFlags: 0
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: 3000
+  m_CustomRenderQueue: 2950
   stringTagMap:
     MotionVector: User
     RenderType: Transparent
@@ -69,7 +69,7 @@ Material:
     - _CullModeForward: 2
     - _DepthFadeAmout: 0
     - _DepthOffsetEnable: 0
-    - _DissortStrenght: -8.6
+    - _DissortStrenght: -7.72
     - _DoubleSidedEnable: 0
     - _DoubleSidedGIMode: 0
     - _DoubleSidedNormalMode: 2
@@ -80,6 +80,7 @@ Material:
     - _ExcludeFromTUAndAA: 0
     - _FoamAmount: 0
     - _FoamCuttOff: 0
+    - _FoamDistance: 1
     - _FoamFallOff: 0
     - _FoamScale: 0
     - _FoamSoftness: 0
@@ -88,9 +89,9 @@ Material:
     - _IntersectionPower: 0
     - _MaterialID: 1
     - _MaterialTypeMask: 2
-    - _NormalStrength: 2.6
+    - _NormalStrength: -2.19
     - _OcclusionStrength: 0
-    - _Opacity: 1.29
+    - _Opacity: 2.7
     - _OpaqueCullMode: 2
     - _PerPixelSorting: 1
     - _RayTracing: 0
@@ -118,7 +119,7 @@ Material:
     - _TransparentCullMode: 2
     - _TransparentDepthPostpassEnable: 0
     - _TransparentDepthPrepassEnable: 0
-    - _TransparentSortPriority: 0
+    - _TransparentSortPriority: -50
     - _TransparentWritingMotionVec: 0
     - _TransparentZWrite: 0
     - _UseShadowThreshold: 0

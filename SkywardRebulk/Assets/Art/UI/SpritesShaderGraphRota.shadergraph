@@ -1443,10 +1443,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -2414.000244140625,
-            "y": 838.0001220703125,
+            "x": -2358.999755859375,
+            "y": 812.9999389648438,
             "width": 124.0,
-            "height": 33.99993896484375
+            "height": 34.00006103515625
         }
     },
     "m_Slots": [
@@ -2859,10 +2859,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -2395.0,
-            "y": 624.9999389648438,
+            "x": -2339.999755859375,
+            "y": 600.0,
             "width": 124.0,
-            "height": 173.00006103515626
+            "height": 173.0
         }
     },
     "m_Slots": [
@@ -5140,7 +5140,7 @@
     "m_FunctionName": "ClockEffect",
     "m_FunctionSource": "",
     "m_FunctionSourceUsePragmas": true,
-    "m_FunctionBody": "float t = Time / Interval;\r\nfloat cycle = floor(t);\r\nfloat phase = frac(t);\r\n\r\n// 0.0 à 0.7 : le shader tourne normalement\r\n// 0.7 à 1.0 : le shader s'arrête et rebondit\r\nfloat motion = 0.0;\r\n\r\nif (phase < 0.7) {\r\n    // On normalise la vitesse sur la phase de mouvement\r\n    motion = phase / 0.7; \r\n} else {\r\n    // Phase d'arrêt + Rebond élastique\r\n    float stopTime = (phase - 0.7) / 0.3; // Temps de l'arrêt (0 à 1)\r\n    \r\n    // Formule d'atténuation pour l'effet ressort (bouncing)\r\n    // Le sinus crée l'oscillation, l'exponentielle négative l'amortit\r\n    float bounce = sin(stopTime * 3.14159 * 3.0) * exp(-stopTime * 4.0) * 0.15;\r\n    \r\n    motion = 1.0 + bounce;\r\n}\r\n\r\n// On réassemble les cycles pour que la rotation reprenne là où elle s'est arrêtée\r\nOut = (cycle + motion) * Interval;"
+    "m_FunctionBody": "float t = Time / Interval;\r\nfloat cycle = floor(t);\r\nfloat phase = frac(t);\r\n\r\r\nfloat motion = 0.0;\r\n\r\nif (phase < 0.7) {\r\n    \r\n    motion = phase / 0.7; \r\n} else {\r\n    float stopTime = (phase - 0.7) / 0.3; // Temps de l'arrêt (0 à 1)\r\n    float bounce = sin(stopTime * 3.14159 * 3.0) * exp(-stopTime * 4.0) * 0.15;\r\n    \r\n    motion = 1.0 + bounce;\r\n}\r\n\r\nOut = (cycle + motion) * Interval;"
 }
 
 {

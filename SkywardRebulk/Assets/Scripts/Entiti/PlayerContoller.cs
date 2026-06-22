@@ -2,6 +2,7 @@ using Scriptable;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
+[RequireComponent(typeof(CharacterController))]
 public class PlayerContoller : MonoBehaviour
 {
     #region Variables
@@ -11,18 +12,24 @@ public class PlayerContoller : MonoBehaviour
     private Vector2 _moveInput;
     private Vector3 _lastDirection;
     
+    private CharacterController _characterController;
+    private float _verticalVelocity;
+
     [Header("Ground Snapping")]
     [SerializeField] private LayerMask groundLayer;
     [SerializeField] private float rayDistance = 1.1f;
     [SerializeField] private float maxSlopeAngle = 45f;
 
     #endregion
-    
 
-    private void FixedUpdate()
+    private void Awake()
+    {
+        _characterController = GetComponent<CharacterController>();
+    }
+
+    private void Update()
     {
         Move();
-        
     }
 
     #region Inputs
@@ -60,7 +67,6 @@ public class PlayerContoller : MonoBehaviour
     private void Move()
     {
         Vector2 input = Vector2.ClampMagnitude(_moveInput, 1f);
-
         Vector3 camForward = _cam.transform.forward;
         Vector3 camRight = _cam.transform.right;
         camForward.y = 0f;
@@ -74,10 +80,20 @@ public class PlayerContoller : MonoBehaviour
 
         Vector3 targetVelocity = direction * Player.instance._data.controllerData.walkSpeed;
         
-        targetVelocity.y = Player.instance.rigidbody.linearVelocity.y; 
+        if (_characterController.isGrounded)
+        {
+            _verticalVelocity = -0.5f; 
+        }
+        else
+        {
+            // Remplacé par Time.deltaTime
+            _verticalVelocity += Physics.gravity.y * Time.deltaTime; 
+        }
+        
+        targetVelocity.y = _verticalVelocity; 
 
-        Vector3 velocityDiff = targetVelocity - Player.instance.rigidbody.linearVelocity;
-        Player.instance.rigidbody.AddForce(velocityDiff, ForceMode.VelocityChange);
+        // Remplacé par Time.deltaTime
+        _characterController.Move(targetVelocity * Time.deltaTime);
         
         if (_lastDirection.sqrMagnitude > 0.01f)
         {
@@ -87,10 +103,11 @@ public class PlayerContoller : MonoBehaviour
                 0f
             );
 
-            Player.instance.rigidbody.MoveRotation(Quaternion.Slerp(
-                Player.instance.rigidbody.rotation,
+            transform.rotation = Quaternion.Slerp(
+                transform.rotation,
                 targetRotation,
-                Player.instance._data.controllerData.rotationSpeed * Time.fixedDeltaTime));
+                Player.instance._data.controllerData.rotationSpeed * Time.deltaTime 
+            );
         }
     }
     #endregion

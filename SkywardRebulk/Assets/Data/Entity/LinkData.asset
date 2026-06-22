@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4819d65d7ee4387a12962c486edb3f8, type: 3}
   m_Name: LinkData
   m_EditorClassIdentifier: Assembly-CSharp::Scriptable.LinkData
-  maxHealth: 5
+  maxHealth: 14
   startHealth: 1
   controllerData:
-    walkSpeed: 7
-    rotationSpeed: 20
+    walkSpeed: 5.19
+    rotationSpeed: 12
     jumpForce: 5
     jumpDuration: 0.2
     minSpeedToJump: 4
