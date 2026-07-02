@@ -6,10 +6,7 @@ using System;
 [Serializable, VolumeComponentMenu("Post-processing/Custom/Skyward DoF V6 (Wash)")]
 public sealed class SkywardDoFVolumeV6 : CustomPostProcessVolumeComponent, IPostProcessComponent
 {
-    [Tooltip("Distance où l'image est parfaitement nette.")]
     public MinFloatParameter focusDistance = new MinFloatParameter(10f, 0f);
-
-    [Tooltip("Distance sur laquelle le flou doux apparaît.")]
     public MinFloatParameter focusRange = new MinFloatParameter(10f, 0f);
 
     [Header("Style Aquarelle")]
@@ -17,14 +14,11 @@ public sealed class SkywardDoFVolumeV6 : CustomPostProcessVolumeComponent, IPost
     public ClampedFloatParameter distortionIntensity = new ClampedFloatParameter(0.002f, 0f, 0.02f);
     public FloatParameter paperScale = new FloatParameter(10f);
 
-    [Header("Distance Wash (V6 - Couleur Nette)")]
-    [Tooltip("La couleur unie qui remplace l'arrière-plan lointain (votre brouillard de peinture).")]
+    [Header("Distance Wash")]
     public ColorParameter washColor = new ColorParameter(Color.blue, true);
-    
-    [Tooltip("Opacité (Alpha) de cette couleur unie. 1 = l'arrière-plan devient totalement uni.")]
     public ClampedFloatParameter washAlpha = new ClampedFloatParameter(1.0f, 0f, 1f);
 
-    [Header("Teinte Atmosphérique (Optionnelle V5)")]
+    [Header("Teinte Atmosphérique")]
     public ColorParameter dofTintColor = new ColorParameter(Color.white, true);
     public ClampedFloatParameter dofTintIntensity = new ClampedFloatParameter(0.0f, 0f, 1f);
 
@@ -60,7 +54,6 @@ public sealed class SkywardDoFVolumeV6 : CustomPostProcessVolumeComponent, IPost
         m_Material.SetFloat("_DistortionIntensity", distortionIntensity.value);
         m_Material.SetFloat("_PaperScale", paperScale.value);
         
-        //Parameters
         m_Material.SetColor("_WashColor", washColor.value);
         m_Material.SetFloat("_WashAlpha", washAlpha.value);
 
